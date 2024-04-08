@@ -1,5 +1,5 @@
 import random
-import mysql.connector
+import psycopg2
 
 province_coordinates = {
     "Hà Nội" : (21.0278, 105.8342), 
@@ -70,24 +70,35 @@ province_coordinates = {
 # List of Vietnamese provinces
 provinces = list(province_coordinates.keys())
 
-# Connect to MySQL database
-connection = mysql.connector.connect(
-    host="operational-instance.cb6okkecsgxd.ap-southeast-1.rds.amazonaws.com",
-    user="admin",
+# Connect to Amazon Redshift database
+db = psycopg2.connect(
+    host="redshift-cluster-1.cbkd07elg7lb.ap-southeast-1.redshift.amazonaws.com",
+    port="5439",
+    user="awsuser",
     password="Ktrung1709",
-    database="cmis"
+    dbname="dev"
 )
 
 # Create cursor
-cursor = connection.cursor()
+cursor = db.cursor()
 
 # Define SQL statement for inserting data into electric meter table
-insert_meter_query = "INSERT INTO electric_meter (meter_id, contract_id, meter_type, status, location, latitude, longitude) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+insert_meter_query = "INSERT INTO cmis.electric_meter (meter_id, contract_id, meter_type, voltage, status, location, latitude, longitude) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)"
 
 # Generate and insert data into the electric meter table
-for contract_id in range(1, 10201):
+for contract_id in range(1, 10202):
     # Determine meter type based on contract type
     meter_type = "single-phase" if contract_id <= 10000 else "three-phase"
+    
+    # Determine voltage based on contract type
+    if contract_id <= 10000:
+        voltage = None  # Residential customers have null voltage
+    elif contract_id <= 10100:
+        voltage_levels = ["less than 6kV", "6kV to less than 22kV", "22kV and above"]
+        voltage = random.choice(voltage_levels)
+    else:
+        voltage_levels = ["less than 6kV", "6kV to less than 22kV", "22kV to 100kV", "100kV and above"]
+        voltage = random.choice(voltage_levels)
     
     # Determine number of meters for commercial and industrial customers
     if contract_id > 10000:
@@ -105,10 +116,10 @@ for contract_id in range(1, 10201):
         latitude, longitude = province_coordinates[location]
         
         # Insert data into the electric meter table
-        cursor.execute(insert_meter_query, (meter_id, contract_id, meter_type, "active", location, latitude, longitude))
+        cursor.execute(insert_meter_query, (meter_id, contract_id, meter_type, voltage, "active", location, latitude, longitude))
         
 # Commit changes and close connection
-connection.commit()
-connection.close()
+db.commit()
+db.close()
 
 print("Data inserted successfully into the electric meter table.")

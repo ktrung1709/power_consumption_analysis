@@ -1,12 +1,13 @@
-import mysql.connector
+import psycopg2
 from faker import Faker
 
-# Connect to MySQL database
-db = mysql.connector.connect(
-    host="operational-instance.cb6okkecsgxd.ap-southeast-1.rds.amazonaws.com",
-    user="admin",
+# Connect to Amazon Redshift database
+db = psycopg2.connect(
+    host="redshift-cluster-1.cbkd07elg7lb.ap-southeast-1.redshift.amazonaws.com",
+    port="5439",
+    user="awsuser",
     password="Ktrung1709",
-    database="cmis"
+    dbname="dev"
 )
 
 # Create Faker instance
@@ -26,7 +27,7 @@ for i in range(1, num_records + 1):
     email = fake.email()
     address = fake.address()
     
-    sql = "INSERT INTO customer (customer_id, customer_name, phone, email, address, customer_type) VALUES (%s, %s, %s, %s, %s, %s)"
+    sql = "INSERT INTO cmis.customer (customer_id, customer_name, phone, email, address, customer_type) VALUES (%s, %s, %s, %s, %s, %s)"
     val = (i, customer_name, phone, email, address, customer_type)
     cursor.execute(sql, val)
     
