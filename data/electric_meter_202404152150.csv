@@ -1,4 +1,4 @@
-"meter_id","contract_id","meter_type","voltage","status","location","latitude","longitude"
+meter_id,contract_id,meter_type,voltage,status,location,latitude,longitude
 1,1,single-phase,,active,Khánh Hòa,12.2585,109.0526
 6,2,single-phase,,active,Trà Vinh,9.9513,106.3346
 11,3,single-phase,,active,Hải Dương,20.9373,106.3146
