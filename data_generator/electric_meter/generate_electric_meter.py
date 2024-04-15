@@ -117,7 +117,7 @@ for contract_id in range(1, 10202):
         
         # Insert data into the electric meter table
         cursor.execute(insert_meter_query, (meter_id, contract_id, meter_type, voltage, "active", location, latitude, longitude))
-        
+    print(contract_id)    
 # Commit changes and close connection
 db.commit()
 db.close()

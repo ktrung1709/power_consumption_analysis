@@ -1,4 +1,4 @@
-create schema cmis 
+create schema cmis;
 
 CREATE TABLE cmis.customer (
     customer_id INT PRIMARY KEY,
@@ -26,14 +26,14 @@ CREATE TABLE cmis.electric_meter (
     location VARCHAR(255),
     latitude FLOAT8,
     longitude FLOAT8,
-    FOREIGN KEY (contract_id) REFERENCES contract(contract_id)
+    FOREIGN KEY (contract_id) REFERENCES cmis.contract(contract_id)
 );
 
 create table cmis.residential_price (
 	tier int primary key,
 	description varchar(255),
 	price float8
-)
+);
 
 insert into cmis.residential_price (tier, description, price) values (1, '0-50 kWh', 1806);
 insert into cmis.residential_price (tier, description, price) values (2, '51-100 kWh', 1866);
@@ -47,7 +47,7 @@ create table cmis.commercial_price (
 	time_of_day varchar(50),
 	price float8,
 	primary key (voltage_tier, time_of_day)
-)
+);
 
 INSERT INTO cmis.commercial_price (voltage_tier, time_of_day, price) VALUES('less than 6kV', 'normal', 2870);
 INSERT INTO cmis.commercial_price (voltage_tier, time_of_day, price) VALUES('less than 6kV', 'low', 1746);
@@ -66,7 +66,7 @@ create table cmis.industrial_price (
 	time_of_day varchar(50),
 	price float8,
 	primary key (voltage_tier, time_of_day)
-)
+);
 
 INSERT INTO cmis.industrial_price (voltage_tier, time_of_day, price) VALUES('less than 6kV', 'normal', 1809);
 INSERT INTO cmis.industrial_price (voltage_tier, time_of_day, price) VALUES('less than 6kV', 'low', 1184);

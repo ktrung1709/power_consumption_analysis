@@ -22,6 +22,7 @@ for customer_id in range(1, num_customers + 1):
     sql = "INSERT INTO cmis.contract (contract_id, customer_id, date_created, status) VALUES (%s, %s, %s, %s)"
     val = (customer_id, customer_id, date_created, status)
     cursor.execute(sql, val)
+    print(customer_id)
 
 db.commit()
 print(f"One contract inserted for each of the {num_customers} customers.")
