@@ -3,7 +3,7 @@ import json
 import csv
 import random
 import time
-from datetime import datetime, timedelta
+from datetime import datetime
 
 # Load meter IDs from CSV file
 meter_ids = []
@@ -14,13 +14,14 @@ with open('data/electric_meter_202404152150.csv', newline='', mode='r', encoding
             meter_ids.append(line['meter_id'])
 
 # Function to generate random power consumption data for a specific meter ID
-def generate_power_consumption(meter_id, hour):
-    if hour in range(17,24):
+def generate_power_consumption(meter_id):
+    dateobj = datetime.now()
+    if dateobj.hour in range(17,24):
         consumption_factor = 1
     else:
         consumption_factor = 0.6
     measure = random.uniform(2.0, 5.0) * consumption_factor
-    datetime_measured = datetime(2023, 1, 1, hour, 0, 0).strftime('%Y-%m-%d %H:%M:%S')
+    datetime_measured = dateobj.strftime('%Y-%m-%d %H:%M:%S')
     return {
         'meter_id': meter_id,
         'measure': measure,
@@ -42,14 +43,13 @@ def main():
     try:
         while True:
             for meter_id in meter_ids:
-                for hour in range(0,24):
-                    power_consumption_data = generate_power_consumption(meter_id, hour)
-                    # Convert data to JSON
-                    message = json.dumps(power_consumption_data)
-                    # Produce message to Kafka topic
-                    kafka_producer.produce(topic, message.encode('utf-8'))
-                    kafka_producer.poll(0)
-            break
+                power_consumption_data = generate_power_consumption(meter_id)
+                # Convert data to JSON
+                message = json.dumps(power_consumption_data)
+                # Produce message to Kafka topic
+                kafka_producer.produce(topic, message.encode('utf-8'))
+                kafka_producer.poll(0)
+            time.sleep(3600)
     except KeyboardInterrupt:
         pass
     finally:
