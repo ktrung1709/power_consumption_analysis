@@ -4,7 +4,7 @@ import boto3
 import json
 # Kafka broker configuration
 bootstrap_servers = 'localhost:29092,localhost:39092'
-topic = 'power_consumption_topic'
+topic = 'power_consumption_topic1'
 
 # Kafka consumer configuration
 conf = {
@@ -57,9 +57,10 @@ def main():
             hourly_messages.append(json.loads(message.value()))
 
             # Check if an hour has passed since the first message received
-            if hourly_messages and datetime.now() - datetime.strptime(hourly_messages[0]['datetime_measured'], '%Y-%m-%d %H:%M:%S') >= timedelta(minutes=3):
+            if hourly_messages and datetime.now() - datetime.strptime(hourly_messages[0]['datetime_measured'], '%Y-%m-%d %H:%M:%S') >= timedelta(minutes=15):
                 # Process the hourly data and send it to S3
                 process_hourly_data()
+                print("Data uploaded to S3")
     except KeyboardInterrupt:
         pass
     finally:

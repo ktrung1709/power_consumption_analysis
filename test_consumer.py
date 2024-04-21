@@ -3,7 +3,7 @@ import os
 
 # Kafka broker configuration
 bootstrap_servers = 'localhost:29092,localhost:39092'
-topic = 'power_consumption_topic'
+topic = 'power_consumption_topic1'
 
 # Kafka consumer configuration
 conf = {
