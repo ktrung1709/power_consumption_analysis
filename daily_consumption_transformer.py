@@ -1,19 +1,20 @@
 from pyspark.sql import SparkSession
-import os
+from pyspark import SparkConf
 
+conf = SparkConf()
+conf.set('spark.hadoop.fs.s3a.access.key','AKIATMFNNGPO53WMF6WR')
+conf.set('spark.hadoop.fs.s3a.secret.key', '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')
+conf.set('spark.hadoop.fs.s3a.aws.credentials.provider', 'org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider')
+conf.set('spark.hadoop.fs.s3a.impl', 'org.apache.hadoop.fs.s3a.S3AFileSystem')
+conf.set('spark.jars.packages', 'org.apache.hadoop:hadoop-aws:3.2.1')
 # Initialize SparkSession
-spark = SparkSession.builder \
-    .appName("Daily Consumption Transformer") \
-    .getOrCreate()
+spark = SparkSession.builder.config(conf=conf).getOrCreate()
 
-# Define the directory containing the JSON files
-input_dir = "E:/hourly_data"
-
-# Get list of JSON files in the directory
-json_files = [os.path.join(input_dir, file) for file in os.listdir(input_dir) if file.endswith(".json") and "20230101" in file]
+# Define the S3 bucket path containing the JSON files
+s3_bucket_path = "s3a://electricity-consumption-master-data/power_consumption_data_20230101*.json"
 
 # Read JSON files into DataFrame
-df = spark.read.json(json_files)
+df = spark.read.json(s3_bucket_path)
 
 # Calculate total consumption by group and show all data
 total_consumption = df.groupBy("meter_id").sum("measure").orderBy("meter_id")
