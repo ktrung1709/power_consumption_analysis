@@ -1,7 +1,7 @@
 from pyspark.sql import SparkSession
 from pyspark import SparkConf
 from pyspark.sql.types import StructType, StructField, StringType, TimestampType, FloatType
-from pyspark.sql.functions import col, lit
+from pyspark.sql.functions import col, to_date
 
 # Set Up Spark Config
 conf = SparkConf()
@@ -10,7 +10,7 @@ conf.set('spark.hadoop.fs.s3a.secret.key', '1UP/8BR0A3zy11lqjT7jcMWR8IhZR+NR+h/N
 conf.set('spark.hadoop.fs.s3a.aws.credentials.provider', 'org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider')
 conf.set('spark.hadoop.fs.s3a.impl', 'org.apache.hadoop.fs.s3a.S3AFileSystem')
 conf.set('spark.jars.packages', 'org.apache.hadoop:hadoop-aws:3.2.1')
-conf.set('spark.jars', 'lib/redshift-jdbc42-2.1.0.26.jar')
+conf.set('spark.jars', '../lib/redshift-jdbc42-2.1.0.26.jar')
 
 # Initialize SparkSession
 spark = SparkSession.builder.appName("Daily Consumption By Customer Transformer").config(conf=conf).getOrCreate()
@@ -28,9 +28,7 @@ schema = StructType([
 # Read JSON files into DataFrame
 daily_consumption_df = spark.read.schema(schema).json(s3_bucket_path)
 daily_consumption_df = daily_consumption_df.withColumn("meter_id", col("meter_id").cast("int"))
-
-# daily_consumption_df.printSchema()
-# daily_consumption_df.show()
+daily_consumption_df = daily_consumption_df.withColumn('date', to_date(col('datetime_measured')))
 
 # Redshift Connection Details
 redshift_url = "jdbc:redshift://{host}:{port}/{database}".format(
@@ -53,9 +51,9 @@ customer_meter_df = spark.read.jdbc(redshift_url, query, properties=redshift_pro
 
 # Calculate total consumption by customer
 daily_consumption_by_customer_df = daily_consumption_df.join(customer_meter_df, 'meter_id')\
-    .groupBy(['customer_id', 'customer_name']).agg({'measure': 'sum'}).withColumnRenamed("sum(measure)", "consumption")
-daily_consumption_by_customer_df.select('customer_id', 'customer_name', 'consumption').orderBy('consumption', ascending = False).show()
-daily_consumption_by_customer_df = daily_consumption_by_customer_df.withColumn('date', lit('2023-01-01')) # Add a constant date column
+    .groupBy(['customer_id', 'customer_name', 'date']).agg({'measure': 'sum'}).withColumnRenamed("sum(measure)", "consumption")
+daily_consumption_by_customer_df.select('customer_id', 'customer_name', 'consumption', 'date')\
+    .orderBy('consumption', ascending = False).show()
 
 # Write the data back to Redshift
 daily_consumption_by_customer_df.write.jdbc(url=redshift_url, table='serving.daily_consumption_by_customer' , mode='append', properties=redshift_properties)
