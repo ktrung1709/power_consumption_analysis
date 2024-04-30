@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession
 from pyspark import SparkConf
-from pyspark.sql.types import StructType, StructField, StringType, TimestampType, FloatType
+from pyspark.sql.types import StructType, StructField, IntegerType, TimestampType, FloatType
 from pyspark.sql.functions import col, to_date
 
 # Set Up Spark Config
@@ -15,19 +15,18 @@ conf.set('spark.jars', '../lib/redshift-jdbc42-2.1.0.26.jar')
 # Initialize SparkSession
 spark = SparkSession.builder.appName("Daily Consumption By Customer Transformer").config(conf=conf).getOrCreate()
 
-# Define the S3 bucket path containing the JSON files
-s3_bucket_path = "s3a://electricity-consumption-master-data/power_consumption_data_20231001*.json"
+# Define the S3 bucket path containing the CSV files
+s3_bucket_path = "s3a://electricity-consumption-master-data/power_consumption_data_20230701*.csv"
 
-# Define the JSON files' data schema
+# Define the CSV files' data schema
 schema = StructType([
-    StructField("meter_id", StringType(), nullable=False),
+    StructField("meter_id", IntegerType(), nullable=False),
     StructField("measure", FloatType(), nullable=False),
     StructField("datetime_measured", TimestampType(), nullable=False)
 ])
 
-# Read JSON files into DataFrame
-daily_consumption_df = spark.read.schema(schema).json(s3_bucket_path)
-daily_consumption_df = daily_consumption_df.withColumn("meter_id", col("meter_id").cast("int"))
+# Read CSV files into DataFrame
+daily_consumption_df = spark.read.csv(s3_bucket_path, schema=schema, header=True)
 daily_consumption_df = daily_consumption_df.withColumn('date', to_date(col('datetime_measured')))
 
 # Redshift Connection Details
