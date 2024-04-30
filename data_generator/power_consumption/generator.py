@@ -1,4 +1,3 @@
-import json
 import csv
 import random
 from datetime import datetime, timedelta
@@ -70,16 +69,18 @@ def generate_power_consumption(meter_id, customer_type, datetime_measured):
     }
 
 def save_hourly_data(hourly_data, hour_timestamp):
-    directory = 'E:/hourly_data'
+    directory = 'C:/data'
     # directory = 'data/hourly_data'
-    file_name = os.path.join(directory, f"power_consumption_data_{hour_timestamp}.json")
-    with open(file_name, 'w') as f:
-        json.dump(hourly_data, f)
+    file_name = os.path.join(directory, f"power_consumption_data_{hour_timestamp}.csv")
+    with open(file_name, 'w', newline='') as f:
+        writer = csv.DictWriter(f, fieldnames=['meter_id', 'measure', 'datetime_measured'])
+        writer.writeheader()
+        writer.writerows(hourly_data)
 
 def main():
     hourly_data = []
-    start_datetime = datetime(2023, 2, 1, 0, 0)  # Start at 00:00 on January 1, 2023
-    end_datetime = datetime(2023, 12, 31, 23, 0)  # End at 23:00 on January 1, 2023
+    start_datetime = datetime(2023, 9, 1, 0, 0)  # Start at 00:00 on January 1, 2023
+    end_datetime = datetime(2024, 3, 31, 23, 0)  # End at 23:00 on January 1, 2023
 
     current_datetime = start_datetime
     while current_datetime <= end_datetime:
@@ -92,6 +93,7 @@ def main():
         hourly_data = []  # Reset hourly data for the next hour
 
         current_datetime += timedelta(hours=1)  # Move to the next hour
+        print('finish data for ' + current_datetime.strftime("%Y%m%d%H%M%S"))
 
 if __name__ == '__main__':
     main()

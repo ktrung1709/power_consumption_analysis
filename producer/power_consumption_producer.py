@@ -1,5 +1,4 @@
 from confluent_kafka import Producer
-import json
 import csv
 import random
 import time
@@ -16,8 +15,9 @@ with open('data/electric_meter_202404152150.csv', newline='', mode='r', encoding
             meter_ids[line['meter_id']] = "commercial"
         else:
             meter_ids[line['meter_id']] = "industrial"
+
 # Function to generate random power consumption data for a specific meter ID
-def generate_power_consumption(meter_id, customer_type):
+def generate_power_consumption_csv(meter_id, customer_type):
     dateobj = datetime.now()
 
     if customer_type == "residential":
@@ -67,15 +67,11 @@ def generate_power_consumption(meter_id, customer_type):
 
     datetime_measured = dateobj.strftime('%Y-%m-%d %H:%M:%S')
 
-    return {
-        'meter_id': meter_id,
-        'measure': measure,
-        'datetime_measured': datetime_measured
-    }
+    return f"{meter_id},{measure},{datetime_measured}"
 
 # Kafka broker configuration
 bootstrap_servers = 'localhost:29092,localhost:39092'
-topic = 'power_consumption_topic1'
+topic = 'topic1'
 
 # Kafka producer configuration
 conf = {
@@ -88,11 +84,9 @@ def main():
     try:
         while True:
             for meter_id in meter_ids.keys():
-                power_consumption_data = generate_power_consumption(meter_id, meter_ids[meter_id])
-                # Convert data to JSON
-                message = json.dumps(power_consumption_data)
+                power_consumption_data = generate_power_consumption_csv(meter_id, meter_ids[meter_id])
                 # Produce message to Kafka topic
-                kafka_producer.produce(topic, message.encode('utf-8'))
+                kafka_producer.produce(topic, power_consumption_data.encode('utf-8'))
                 kafka_producer.poll(0)
             time.sleep(3600)
     except KeyboardInterrupt:

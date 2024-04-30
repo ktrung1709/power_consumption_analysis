@@ -2,6 +2,7 @@ from pyspark.sql import SparkSession
 from pyspark import SparkConf
 from pyspark.sql.types import StructType, StructField, StringType, TimestampType, FloatType
 from pyspark.sql.functions import col, to_date
+from datetime import datetime, timedelta
 
 # Set Up Spark Config
 conf = SparkConf()
@@ -15,8 +16,8 @@ conf.set('spark.jars', '../lib/redshift-jdbc42-2.1.0.26.jar')
 # Initialize SparkSession
 spark = SparkSession.builder.appName("Daily Consumption By Customer Transformer").config(conf=conf).getOrCreate()
 
-# Define the S3 bucket path containing the JSON files
-s3_bucket_path = "s3a://electricity-consumption-master-data/power_consumption_data_20231001*.json"
+# Define the base S3 bucket path containing the JSON files
+base_s3_bucket_path = "s3a://electricity-consumption-master-data/"
 
 # Define the JSON files' data schema
 schema = StructType([
@@ -24,11 +25,6 @@ schema = StructType([
     StructField("measure", FloatType(), nullable=False),
     StructField("datetime_measured", TimestampType(), nullable=False)
 ])
-
-# Read JSON files into DataFrame
-daily_consumption_df = spark.read.schema(schema).json(s3_bucket_path)
-daily_consumption_df = daily_consumption_df.withColumn("meter_id", col("meter_id").cast("int"))
-daily_consumption_df = daily_consumption_df.withColumn('date', to_date(col('datetime_measured')))
 
 # Redshift Connection Details
 redshift_url = "jdbc:redshift://{host}:{port}/{database}".format(
@@ -49,13 +45,27 @@ query = "(select c.customer_id, c.customer_name, m.meter_id from cmis.customer c
         inner join cmis.electric_meter m on co.contract_id = m.contract_id ) as tmp"
 customer_meter_df = spark.read.jdbc(redshift_url, query, properties=redshift_properties)
 
-# Calculate total consumption by customer
-daily_consumption_by_customer_df = daily_consumption_df.join(customer_meter_df, 'meter_id')\
-    .groupBy(['customer_id', 'customer_name', 'date']).agg({'measure': 'sum'}).withColumnRenamed("sum(measure)", "consumption")
-daily_consumption_by_customer_df.select('customer_id', 'customer_name', 'consumption', 'date').show()
+# Iterate over dates from 20231001 to 20231231
+start_date = datetime(2023, 10, 3)
+end_date = datetime(2023, 12, 31)
+delta = timedelta(days=1)
 
-# Write the data back to Redshift
-daily_consumption_by_customer_df.write.jdbc(url=redshift_url, table='serving.daily_consumption_by_customer' , mode='append', properties=redshift_properties)
+while start_date <= end_date:
+    date_str = start_date.strftime("%Y%m%d")
+    s3_bucket_path = base_s3_bucket_path + f"power_consumption_data_{date_str}*.json"
+    # Read JSON files into DataFrame
+    daily_consumption_df = spark.read.schema(schema).json(s3_bucket_path)
+    daily_consumption_df = daily_consumption_df.withColumn("meter_id", col("meter_id").cast("int"))
+    daily_consumption_df = daily_consumption_df.withColumn('date', to_date(col('datetime_measured')))
+    # Calculate total consumption by customer
+    daily_consumption_by_customer_df = daily_consumption_df.join(customer_meter_df, 'meter_id')\
+        .groupBy(['customer_id', 'customer_name', 'date']).agg({'measure': 'sum'}).coalesce(4).withColumnRenamed("sum(measure)", "consumption")
+    # Write the data back to Redshift
+    daily_consumption_by_customer_df.write.jdbc(url=redshift_url, table='serving.daily_consumption_by_customer', mode='append', properties=redshift_properties)
+    print('Finish Loading Data of ' + date_str)
+    # Move to the next date
+    start_date += delta
+
 
 # Stop SparkSession
 spark.stop()
