@@ -7,5 +7,4 @@ inner join cmis.contract c
     on c.contract_id = e.contract_id
 inner join cmis.customer cu
     on cu.customer_id = c.customer_id
-where DATE_PART(month, p.datetime_measured) = 7
 group by date(p.datetime_measured), cu.customer_id, cu.customer_name

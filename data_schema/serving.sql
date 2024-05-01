@@ -51,7 +51,7 @@ create table serving.monthly_consumption_by_location (
     PRIMARY KEY (location, month, year)
 )
 
-create table serving.all_power_consumption (
-    consumption FLOAT8,
-    updated_date DATE
+create table serving.daily_total_consumption (
+    "date" DATE PRIMARY KEY,
+    consumption FLOAT8
 )
