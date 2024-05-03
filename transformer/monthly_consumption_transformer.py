@@ -1,7 +1,7 @@
 from pyspark.sql import SparkSession
 from pyspark import SparkConf
 from pyspark.sql.types import StructType, StructField, IntegerType, TimestampType, FloatType
-from pyspark.sql.functions import col, to_date
+from pyspark.sql.functions import col, month, year
 
 # Set Up Spark Config
 conf = SparkConf()
@@ -13,10 +13,10 @@ conf.set('spark.jars.packages', 'org.apache.hadoop:hadoop-aws:3.2.1')
 conf.set('spark.jars', '../lib/redshift-jdbc42-2.1.0.26.jar')
 
 # Initialize SparkSession
-spark = SparkSession.builder.appName("Daily Consumption Transformer").config(conf=conf).getOrCreate()
+spark = SparkSession.builder.appName("Monthly Consumption Transformer").config(conf=conf).getOrCreate()
 
 # Define the S3 bucket path containing the CSV files
-s3_bucket_path = "s3a://electricity-consumption-master-data/power_consumption_data_20230701*.csv"
+s3_bucket_path = "s3a://electricity-consumption-master-data/power_consumption_data_202307*.csv"
 
 # Define the CSV files' data schema
 schema = StructType([
@@ -27,7 +27,8 @@ schema = StructType([
 
 # Read CSV files into DataFrame
 daily_consumption_df = spark.read.csv(s3_bucket_path, schema=schema, header=True)
-daily_consumption_df = daily_consumption_df.withColumn('date', to_date(col('datetime_measured')))
+daily_consumption_df = daily_consumption_df.withColumn('month', month(col('datetime_measured')))
+daily_consumption_df = daily_consumption_df.withColumn('year', year(col('datetime_measured')))
 
 # Redshift Connection Details
 redshift_url = "jdbc:redshift://{host}:{port}/{database}".format(
@@ -43,11 +44,11 @@ redshift_properties = {
 }
 
 # Calculate total consumption daily
-daily_total_consumption_df = daily_consumption_df.groupBy('date').agg({'measure': 'sum'}).withColumnRenamed("sum(measure)", "consumption")
-daily_total_consumption_df.select('date', 'consumption').show()
+monthly_total_consumption_df = daily_consumption_df.groupBy(['month', 'year']).agg({'measure': 'sum'}).withColumnRenamed("sum(measure)", "consumption")
+monthly_total_consumption_df.select('month', 'year', 'consumption').show()
 
 # Write the data back to Redshift
-daily_total_consumption_df.write.jdbc(url=redshift_url, table='serving.daily_total_consumption' , mode='append', properties=redshift_properties)
+monthly_total_consumption_df.write.jdbc(url=redshift_url, table='serving.monthly_total_consumption' , mode='append', properties=redshift_properties)
 
 # Stop SparkSession
 spark.stop()

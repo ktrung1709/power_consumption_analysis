@@ -55,3 +55,10 @@ create table serving.daily_total_consumption (
     "date" DATE PRIMARY KEY,
     consumption FLOAT8
 )
+
+create table serving.monthly_total_consumption (
+    month int,
+    year int,
+    consumption FLOAT8,
+    PRIMARY KEY (month, year)
+)

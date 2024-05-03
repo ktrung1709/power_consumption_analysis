@@ -50,12 +50,12 @@ query = "(select c.customer_id, c.customer_name, m.meter_id from cmis.customer c
 customer_meter_df = spark.read.jdbc(redshift_url, query, properties=redshift_properties)
 
 # Calculate total consumption by customer
-daily_consumption_by_customer_df = daily_consumption_df.join(customer_meter_df, 'meter_id')\
+monthly_consumption_by_customer_df = daily_consumption_df.join(customer_meter_df, 'meter_id')\
     .groupBy(['customer_id', 'customer_name', 'year', 'month']).agg({'measure': 'sum'}).withColumnRenamed("sum(measure)", "consumption")
-daily_consumption_by_customer_df.select('customer_id', 'customer_name', 'consumption', 'year', 'month').show()
+monthly_consumption_by_customer_df.select('customer_id', 'customer_name', 'consumption', 'year', 'month').show()
 
 # Write the data back to Redshift
-daily_consumption_by_customer_df.write.jdbc(url=redshift_url, table='serving.monthly_consumption_by_customer' , mode='append', properties=redshift_properties)
+monthly_consumption_by_customer_df.write.jdbc(url=redshift_url, table='serving.monthly_consumption_by_customer' , mode='append', properties=redshift_properties)
 
 # Stop SparkSession
 spark.stop()
