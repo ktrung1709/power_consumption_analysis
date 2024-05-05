@@ -62,3 +62,12 @@ create table serving.monthly_total_consumption (
     consumption FLOAT8,
     PRIMARY KEY (month, year)
 )
+
+create table serving.monthly_revenue_by_customer (
+    customer_id INT,
+    customer_name VARCHAR(255),
+    month int,
+    year int,
+    revenue FLOAT8,
+    PRIMARY KEY (customer_id, month, year)
+)
