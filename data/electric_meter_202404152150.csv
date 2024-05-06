@@ -10004,78 +10004,78 @@ meter_id,contract_id,meter_type,voltage,status,location,latitude,longitude
 50003,10001,three-phase,less than 6kV,active,Hưng Yên,20.6547,106.0578
 50004,10001,three-phase,less than 6kV,active,Đồng Tháp,10.4938,105.6882
 50005,10001,three-phase,less than 6kV,active,An Giang,10.5216,105.1259
-50006,10002,three-phase,"6kV to less than 22kV",active,Bình Định,13.886,109.1077
-50007,10002,three-phase,"6kV to less than 22kV",active,Kon Tum,14.3497,108.0005
-50008,10002,three-phase,"6kV to less than 22kV",active,Hậu Giang,9.7579,105.6413
-50009,10002,three-phase,"6kV to less than 22kV",active,Vĩnh Long,10.2396,105.9572
-50010,10002,three-phase,"6kV to less than 22kV",active,Hà Giang,22.8026,104.9784
-50011,10003,three-phase,"22kV and above",active,Đà Nẵng,16.0544,108.2022
-50012,10003,three-phase,"22kV and above",active,Tuyên Quang,21.7767,105.228
-50013,10003,three-phase,"22kV and above",active,Điện Biên,21.4064,103.0322
-50016,10004,three-phase,"6kV to less than 22kV",active,Tây Ninh,11.3352,106.1099
-50017,10004,three-phase,"6kV to less than 22kV",active,Bạc Liêu,9.294,105.7216
-50018,10004,three-phase,"6kV to less than 22kV",active,Đồng Nai,11.0686,107.1676
+50006,10002,three-phase,6kV to less than 22kV,active,Bình Định,13.886,109.1077
+50007,10002,three-phase,6kV to less than 22kV,active,Kon Tum,14.3497,108.0005
+50008,10002,three-phase,6kV to less than 22kV,active,Hậu Giang,9.7579,105.6413
+50009,10002,three-phase,6kV to less than 22kV,active,Vĩnh Long,10.2396,105.9572
+50010,10002,three-phase,6kV to less than 22kV,active,Hà Giang,22.8026,104.9784
+50011,10003,three-phase,22kV and above,active,Đà Nẵng,16.0544,108.2022
+50012,10003,three-phase,22kV and above,active,Tuyên Quang,21.7767,105.228
+50013,10003,three-phase,22kV and above,active,Điện Biên,21.4064,103.0322
+50016,10004,three-phase,6kV to less than 22kV,active,Tây Ninh,11.3352,106.1099
+50017,10004,three-phase,6kV to less than 22kV,active,Bạc Liêu,9.294,105.7216
+50018,10004,three-phase,6kV to less than 22kV,active,Đồng Nai,11.0686,107.1676
 50021,10005,three-phase,less than 6kV,active,Bạc Liêu,9.294,105.7216
 50022,10005,three-phase,less than 6kV,active,Hải Dương,20.9373,106.3146
-50026,10006,three-phase,"22kV and above",active,Sóc Trăng,9.6025,105.9739
-50027,10006,three-phase,"22kV and above",active,Trà Vinh,9.9513,106.3346
-50028,10006,three-phase,"22kV and above",active,Bắc Ninh,21.1782,106.071
-50031,10007,three-phase,"22kV and above",active,Hà Giang,22.8026,104.9784
-50032,10007,three-phase,"22kV and above",active,Thái Bình,20.4463,106.3366
-50033,10007,three-phase,"22kV and above",active,Kiên Giang,9.825,105.1259
-50036,10008,three-phase,"22kV and above",active,Cao Bằng,22.6666,106.264
-50037,10008,three-phase,"22kV and above",active,Đồng Nai,11.0686,107.1676
-50041,10009,three-phase,"22kV and above",active,Thanh Hóa,19.8067,105.7852
-50042,10009,three-phase,"22kV and above",active,Bắc Kạn,22.1443,105.8345
-50043,10009,three-phase,"22kV and above",active,Quảng Bình,17.6103,106.3487
-50044,10009,three-phase,"22kV and above",active,Hòa Bình,20.8275,105.3391
+50026,10006,three-phase,22kV and above,active,Sóc Trăng,9.6025,105.9739
+50027,10006,three-phase,22kV and above,active,Trà Vinh,9.9513,106.3346
+50028,10006,three-phase,22kV and above,active,Bắc Ninh,21.1782,106.071
+50031,10007,three-phase,22kV and above,active,Hà Giang,22.8026,104.9784
+50032,10007,three-phase,22kV and above,active,Thái Bình,20.4463,106.3366
+50033,10007,three-phase,22kV and above,active,Kiên Giang,9.825,105.1259
+50036,10008,three-phase,22kV and above,active,Cao Bằng,22.6666,106.264
+50037,10008,three-phase,22kV and above,active,Đồng Nai,11.0686,107.1676
+50041,10009,three-phase,22kV and above,active,Thanh Hóa,19.8067,105.7852
+50042,10009,three-phase,22kV and above,active,Bắc Kạn,22.1443,105.8345
+50043,10009,three-phase,22kV and above,active,Quảng Bình,17.6103,106.3487
+50044,10009,three-phase,22kV and above,active,Hòa Bình,20.8275,105.3391
 50046,10010,three-phase,less than 6kV,active,Thái Nguyên,21.5672,105.8252
-50051,10011,three-phase,"22kV and above",active,Long An,10.6956,106.2431
-50052,10011,three-phase,"22kV and above",active,Hòa Bình,20.8275,105.3391
-50056,10012,three-phase,"6kV to less than 22kV",active,Bình Phước,11.7512,106.7235
-50057,10012,three-phase,"6kV to less than 22kV",active,Hải Phòng,20.8449,106.6881
-50061,10013,three-phase,"22kV and above",active,Sóc Trăng,9.6025,105.9739
-50062,10013,three-phase,"22kV and above",active,Quảng Ninh,21.0064,107.2925
-50063,10013,three-phase,"22kV and above",active,Bà rịa Vũng Tàu,10.5417,107.243
-50064,10013,three-phase,"22kV and above",active,Hậu Giang,9.7579,105.6413
+50051,10011,three-phase,22kV and above,active,Long An,10.6956,106.2431
+50052,10011,three-phase,22kV and above,active,Hòa Bình,20.8275,105.3391
+50056,10012,three-phase,6kV to less than 22kV,active,Bình Phước,11.7512,106.7235
+50057,10012,three-phase,6kV to less than 22kV,active,Hải Phòng,20.8449,106.6881
+50061,10013,three-phase,22kV and above,active,Sóc Trăng,9.6025,105.9739
+50062,10013,three-phase,22kV and above,active,Quảng Ninh,21.0064,107.2925
+50063,10013,three-phase,22kV and above,active,Bà rịa Vũng Tàu,10.5417,107.243
+50064,10013,three-phase,22kV and above,active,Hậu Giang,9.7579,105.6413
 50066,10014,three-phase,less than 6kV,active,Cần Thơ,10.0452,105.7469
 50067,10014,three-phase,less than 6kV,active,Thanh Hóa,19.8067,105.7852
 50071,10015,three-phase,less than 6kV,active,An Giang,10.5216,105.1259
 50076,10016,three-phase,less than 6kV,active,Đắk Nông,12.2646,107.6098
 50077,10016,three-phase,less than 6kV,active,Quảng Trị,16.7943,106.9634
 50078,10016,three-phase,less than 6kV,active,Lâm Đồng,11.5753,108.1429
-50081,10017,three-phase,"6kV to less than 22kV",active,Lâm Đồng,11.5753,108.1429
-50082,10017,three-phase,"6kV to less than 22kV",active,Yên Bái,21.7168,104.8986
-50083,10017,three-phase,"6kV to less than 22kV",active,Bắc Giang,21.282,106.1975
-50086,10018,three-phase,"22kV and above",active,Đà Nẵng,16.0544,108.2022
-50087,10018,three-phase,"22kV and above",active,Hải Dương,20.9373,106.3146
-50091,10019,three-phase,"22kV and above",active,Hà Nam,20.5835,105.923
-50092,10019,three-phase,"22kV and above",active,Đồng Tháp,10.4938,105.6882
+50081,10017,three-phase,6kV to less than 22kV,active,Lâm Đồng,11.5753,108.1429
+50082,10017,three-phase,6kV to less than 22kV,active,Yên Bái,21.7168,104.8986
+50083,10017,three-phase,6kV to less than 22kV,active,Bắc Giang,21.282,106.1975
+50086,10018,three-phase,22kV and above,active,Đà Nẵng,16.0544,108.2022
+50087,10018,three-phase,22kV and above,active,Hải Dương,20.9373,106.3146
+50091,10019,three-phase,22kV and above,active,Hà Nam,20.5835,105.923
+50092,10019,three-phase,22kV and above,active,Đồng Tháp,10.4938,105.6882
 50096,10020,three-phase,less than 6kV,active,Tây Ninh,11.3352,106.1099
-50101,10021,three-phase,"6kV to less than 22kV",active,Hưng Yên,20.6547,106.0578
-50102,10021,three-phase,"6kV to less than 22kV",active,Lai Châu,22.3862,103.4703
-50103,10021,three-phase,"6kV to less than 22kV",active,Lạng Sơn,21.8537,106.7615
-50106,10022,three-phase,"22kV and above",active,Nam Định,20.4388,106.1621
-50107,10022,three-phase,"22kV and above",active,Bình Dương,11.3254,106.477
-50111,10023,three-phase,"6kV to less than 22kV",active,Tuyên Quang,21.7767,105.228
-50116,10024,three-phase,"6kV to less than 22kV",active,Quảng Bình,17.6103,106.3487
-50117,10024,three-phase,"6kV to less than 22kV",active,Trà Vinh,9.9513,106.3346
-50121,10025,three-phase,"6kV to less than 22kV",active,Hải Dương,20.9373,106.3146
-50126,10026,three-phase,"6kV to less than 22kV",active,Bạc Liêu,9.294,105.7216
-50127,10026,three-phase,"6kV to less than 22kV",active,Quảng Trị,16.7943,106.9634
-50128,10026,three-phase,"6kV to less than 22kV",active,TP. Hồ Chí Minh,10.8231,106.6297
-50129,10026,three-phase,"6kV to less than 22kV",active,Bình Định,13.886,109.1077
+50101,10021,three-phase,6kV to less than 22kV,active,Hưng Yên,20.6547,106.0578
+50102,10021,three-phase,6kV to less than 22kV,active,Lai Châu,22.3862,103.4703
+50103,10021,three-phase,6kV to less than 22kV,active,Lạng Sơn,21.8537,106.7615
+50106,10022,three-phase,22kV and above,active,Nam Định,20.4388,106.1621
+50107,10022,three-phase,22kV and above,active,Bình Dương,11.3254,106.477
+50111,10023,three-phase,6kV to less than 22kV,active,Tuyên Quang,21.7767,105.228
+50116,10024,three-phase,6kV to less than 22kV,active,Quảng Bình,17.6103,106.3487
+50117,10024,three-phase,6kV to less than 22kV,active,Trà Vinh,9.9513,106.3346
+50121,10025,three-phase,6kV to less than 22kV,active,Hải Dương,20.9373,106.3146
+50126,10026,three-phase,6kV to less than 22kV,active,Bạc Liêu,9.294,105.7216
+50127,10026,three-phase,6kV to less than 22kV,active,Quảng Trị,16.7943,106.9634
+50128,10026,three-phase,6kV to less than 22kV,active,TP. Hồ Chí Minh,10.8231,106.6297
+50129,10026,three-phase,6kV to less than 22kV,active,Bình Định,13.886,109.1077
 50131,10027,three-phase,less than 6kV,active,Hà Giang,22.8026,104.9784
 50132,10027,three-phase,less than 6kV,active,Lạng Sơn,21.8537,106.7615
 50136,10028,three-phase,less than 6kV,active,Hà Nam,20.5835,105.923
 50137,10028,three-phase,less than 6kV,active,Phú Thọ,21.422,105.2297
 50138,10028,three-phase,less than 6kV,active,Hải Phòng,20.8449,106.6881
 50139,10028,three-phase,less than 6kV,active,Kiên Giang,9.825,105.1259
-50141,10029,three-phase,"6kV to less than 22kV",active,Cà Mau,9.1527,105.1961
-50142,10029,three-phase,"6kV to less than 22kV",active,Đà Nẵng,16.0544,108.2022
-50143,10029,three-phase,"6kV to less than 22kV",active,Sơn La,21.3269,103.9144
-50144,10029,three-phase,"6kV to less than 22kV",active,Lạng Sơn,21.8537,106.7615
-50145,10029,three-phase,"6kV to less than 22kV",active,Đắk Nông,12.2646,107.6098
+50141,10029,three-phase,6kV to less than 22kV,active,Cà Mau,9.1527,105.1961
+50142,10029,three-phase,6kV to less than 22kV,active,Đà Nẵng,16.0544,108.2022
+50143,10029,three-phase,6kV to less than 22kV,active,Sơn La,21.3269,103.9144
+50144,10029,three-phase,6kV to less than 22kV,active,Lạng Sơn,21.8537,106.7615
+50145,10029,three-phase,6kV to less than 22kV,active,Đắk Nông,12.2646,107.6098
 50146,10030,three-phase,less than 6kV,active,Bình Thuận,11.0904,108.0721
 50147,10030,three-phase,less than 6kV,active,Phú Thọ,21.422,105.2297
 50148,10030,three-phase,less than 6kV,active,Bình Phước,11.7512,106.7235
@@ -10084,56 +10084,56 @@ meter_id,contract_id,meter_type,voltage,status,location,latitude,longitude
 50152,10031,three-phase,less than 6kV,active,Cà Mau,9.1527,105.1961
 50153,10031,three-phase,less than 6kV,active,Bình Định,13.886,109.1077
 50154,10031,three-phase,less than 6kV,active,Đắk Nông,12.2646,107.6098
-50156,10032,three-phase,"6kV to less than 22kV",active,Sóc Trăng,9.6025,105.9739
-50157,10032,three-phase,"6kV to less than 22kV",active,Đồng Nai,11.0686,107.1676
-50158,10032,three-phase,"6kV to less than 22kV",active,Yên Bái,21.7168,104.8986
-50159,10032,three-phase,"6kV to less than 22kV",active,Bình Thuận,11.0904,108.0721
-50160,10032,three-phase,"6kV to less than 22kV",active,Gia Lai,13.8079,108.1094
+50156,10032,three-phase,6kV to less than 22kV,active,Sóc Trăng,9.6025,105.9739
+50157,10032,three-phase,6kV to less than 22kV,active,Đồng Nai,11.0686,107.1676
+50158,10032,three-phase,6kV to less than 22kV,active,Yên Bái,21.7168,104.8986
+50159,10032,three-phase,6kV to less than 22kV,active,Bình Thuận,11.0904,108.0721
+50160,10032,three-phase,6kV to less than 22kV,active,Gia Lai,13.8079,108.1094
 50161,10033,three-phase,less than 6kV,active,Lâm Đồng,11.5753,108.1429
 50162,10033,three-phase,less than 6kV,active,Tây Ninh,11.3352,106.1099
 50163,10033,three-phase,less than 6kV,active,Hải Dương,20.9373,106.3146
-50166,10034,three-phase,"22kV and above",active,Ninh Thuận,11.6739,108.863
-50167,10034,three-phase,"22kV and above",active,Hòa Bình,20.8275,105.3391
-50168,10034,three-phase,"22kV and above",active,Hà Giang,22.8026,104.9784
-50171,10035,three-phase,"6kV to less than 22kV",active,Hải Phòng,20.8449,106.6881
-50172,10035,three-phase,"6kV to less than 22kV",active,Thanh Hóa,19.8067,105.7852
-50173,10035,three-phase,"6kV to less than 22kV",active,Bà rịa Vũng Tàu,10.5417,107.243
-50174,10035,three-phase,"6kV to less than 22kV",active,Thanh Hóa,19.8067,105.7852
+50166,10034,three-phase,22kV and above,active,Ninh Thuận,11.6739,108.863
+50167,10034,three-phase,22kV and above,active,Hòa Bình,20.8275,105.3391
+50168,10034,three-phase,22kV and above,active,Hà Giang,22.8026,104.9784
+50171,10035,three-phase,6kV to less than 22kV,active,Hải Phòng,20.8449,106.6881
+50172,10035,three-phase,6kV to less than 22kV,active,Thanh Hóa,19.8067,105.7852
+50173,10035,three-phase,6kV to less than 22kV,active,Bà rịa Vũng Tàu,10.5417,107.243
+50174,10035,three-phase,6kV to less than 22kV,active,Thanh Hóa,19.8067,105.7852
 50176,10036,three-phase,less than 6kV,active,Đắk Lắk,12.71,108.2378
-50181,10037,three-phase,"6kV to less than 22kV",active,Gia Lai,13.8079,108.1094
-50182,10037,three-phase,"6kV to less than 22kV",active,Bình Phước,11.7512,106.7235
-50186,10038,three-phase,"22kV and above",active,Tây Ninh,11.3352,106.1099
-50187,10038,three-phase,"22kV and above",active,Ninh Bình,20.2506,105.9745
-50191,10039,three-phase,"22kV and above",active,Yên Bái,21.7168,104.8986
-50192,10039,three-phase,"22kV and above",active,Quảng Nam,15.5394,108.0191
-50193,10039,three-phase,"22kV and above",active,Thừa Thiên Huế,16.4674,107.5905
-50194,10039,three-phase,"22kV and above",active,Quảng Trị,16.7943,106.9634
-50196,10040,three-phase,"6kV to less than 22kV",active,Hà Nam,20.5835,105.923
-50197,10040,three-phase,"6kV to less than 22kV",active,Cà Mau,9.1527,105.1961
-50198,10040,three-phase,"6kV to less than 22kV",active,Bắc Giang,21.282,106.1975
-50201,10041,three-phase,"22kV and above",active,Gia Lai,13.8079,108.1094
-50202,10041,three-phase,"22kV and above",active,Quảng Trị,16.7943,106.9634
-50203,10041,three-phase,"22kV and above",active,Hòa Bình,20.8275,105.3391
-50206,10042,three-phase,"6kV to less than 22kV",active,Quảng Trị,16.7943,106.9634
-50207,10042,three-phase,"6kV to less than 22kV",active,Lai Châu,22.3862,103.4703
-50208,10042,three-phase,"6kV to less than 22kV",active,Bến Tre,10.2434,106.3756
+50181,10037,three-phase,6kV to less than 22kV,active,Gia Lai,13.8079,108.1094
+50182,10037,three-phase,6kV to less than 22kV,active,Bình Phước,11.7512,106.7235
+50186,10038,three-phase,22kV and above,active,Tây Ninh,11.3352,106.1099
+50187,10038,three-phase,22kV and above,active,Ninh Bình,20.2506,105.9745
+50191,10039,three-phase,22kV and above,active,Yên Bái,21.7168,104.8986
+50192,10039,three-phase,22kV and above,active,Quảng Nam,15.5394,108.0191
+50193,10039,three-phase,22kV and above,active,Thừa Thiên Huế,16.4674,107.5905
+50194,10039,three-phase,22kV and above,active,Quảng Trị,16.7943,106.9634
+50196,10040,three-phase,6kV to less than 22kV,active,Hà Nam,20.5835,105.923
+50197,10040,three-phase,6kV to less than 22kV,active,Cà Mau,9.1527,105.1961
+50198,10040,three-phase,6kV to less than 22kV,active,Bắc Giang,21.282,106.1975
+50201,10041,three-phase,22kV and above,active,Gia Lai,13.8079,108.1094
+50202,10041,three-phase,22kV and above,active,Quảng Trị,16.7943,106.9634
+50203,10041,three-phase,22kV and above,active,Hòa Bình,20.8275,105.3391
+50206,10042,three-phase,6kV to less than 22kV,active,Quảng Trị,16.7943,106.9634
+50207,10042,three-phase,6kV to less than 22kV,active,Lai Châu,22.3862,103.4703
+50208,10042,three-phase,6kV to less than 22kV,active,Bến Tre,10.2434,106.3756
 50211,10043,three-phase,less than 6kV,active,Long An,10.6956,106.2431
 50212,10043,three-phase,less than 6kV,active,Điện Biên,21.4064,103.0322
-50216,10044,three-phase,"22kV and above",active,Bắc Ninh,21.1782,106.071
-50221,10045,three-phase,"6kV to less than 22kV",active,Khánh Hòa,12.2585,109.0526
-50222,10045,three-phase,"6kV to less than 22kV",active,Đà Nẵng,16.0544,108.2022
-50223,10045,three-phase,"6kV to less than 22kV",active,Khánh Hòa,12.2585,109.0526
-50224,10045,three-phase,"6kV to less than 22kV",active,Hà Giang,22.8026,104.9784
+50216,10044,three-phase,22kV and above,active,Bắc Ninh,21.1782,106.071
+50221,10045,three-phase,6kV to less than 22kV,active,Khánh Hòa,12.2585,109.0526
+50222,10045,three-phase,6kV to less than 22kV,active,Đà Nẵng,16.0544,108.2022
+50223,10045,three-phase,6kV to less than 22kV,active,Khánh Hòa,12.2585,109.0526
+50224,10045,three-phase,6kV to less than 22kV,active,Hà Giang,22.8026,104.9784
 50226,10046,three-phase,less than 6kV,active,Đồng Tháp,10.4938,105.6882
 50227,10046,three-phase,less than 6kV,active,Tiền Giang,10.4493,106.3421
 50228,10046,three-phase,less than 6kV,active,Quảng Nam,15.5394,108.0191
 50229,10046,three-phase,less than 6kV,active,Hà Tĩnh,18.342,105.8923
 50230,10046,three-phase,less than 6kV,active,Đắk Lắk,12.71,108.2378
-50231,10047,three-phase,"6kV to less than 22kV",active,Tuyên Quang,21.7767,105.228
-50232,10047,three-phase,"6kV to less than 22kV",active,Đắk Lắk,12.71,108.2378
-50233,10047,three-phase,"6kV to less than 22kV",active,Kiên Giang,9.825,105.1259
-50234,10047,three-phase,"6kV to less than 22kV",active,Đắk Nông,12.2646,107.6098
-50235,10047,three-phase,"6kV to less than 22kV",active,Hà Nội,21.0278,105.8342
+50231,10047,three-phase,6kV to less than 22kV,active,Tuyên Quang,21.7767,105.228
+50232,10047,three-phase,6kV to less than 22kV,active,Đắk Lắk,12.71,108.2378
+50233,10047,three-phase,6kV to less than 22kV,active,Kiên Giang,9.825,105.1259
+50234,10047,three-phase,6kV to less than 22kV,active,Đắk Nông,12.2646,107.6098
+50235,10047,three-phase,6kV to less than 22kV,active,Hà Nội,21.0278,105.8342
 50236,10048,three-phase,less than 6kV,active,Sơn La,21.3269,103.9144
 50237,10048,three-phase,less than 6kV,active,Đồng Nai,11.0686,107.1676
 50241,10049,three-phase,less than 6kV,active,Ninh Thuận,11.6739,108.863
@@ -10151,102 +10151,102 @@ meter_id,contract_id,meter_type,voltage,status,location,latitude,longitude
 50257,10052,three-phase,less than 6kV,active,Đà Nẵng,16.0544,108.2022
 50258,10052,three-phase,less than 6kV,active,Đắk Lắk,12.71,108.2378
 50259,10052,three-phase,less than 6kV,active,Hải Dương,20.9373,106.3146
-50261,10053,three-phase,"6kV to less than 22kV",active,Nghệ An,19.2342,104.92
-50266,10054,three-phase,"22kV and above",active,Thừa Thiên Huế,16.4674,107.5905
-50267,10054,three-phase,"22kV and above",active,Tây Ninh,11.3352,106.1099
-50268,10054,three-phase,"22kV and above",active,Hưng Yên,20.6547,106.0578
-50271,10055,three-phase,"22kV and above",active,Kon Tum,14.3497,108.0005
-50272,10055,three-phase,"22kV and above",active,Bắc Giang,21.282,106.1975
-50273,10055,three-phase,"22kV and above",active,Hà Giang,22.8026,104.9784
-50274,10055,three-phase,"22kV and above",active,Kon Tum,14.3497,108.0005
-50276,10056,three-phase,"6kV to less than 22kV",active,Yên Bái,21.7168,104.8986
-50277,10056,three-phase,"6kV to less than 22kV",active,Bình Phước,11.7512,106.7235
-50281,10057,three-phase,"6kV to less than 22kV",active,Bình Định,13.886,109.1077
-50282,10057,three-phase,"6kV to less than 22kV",active,Lâm Đồng,11.5753,108.1429
-50283,10057,three-phase,"6kV to less than 22kV",active,Bình Định,13.886,109.1077
-50286,10058,three-phase,"22kV and above",active,Quảng Trị,16.7943,106.9634
-50287,10058,three-phase,"22kV and above",active,Bắc Ninh,21.1782,106.071
-50291,10059,three-phase,"6kV to less than 22kV",active,Nghệ An,19.2342,104.92
-50292,10059,three-phase,"6kV to less than 22kV",active,Cà Mau,9.1527,105.1961
+50261,10053,three-phase,6kV to less than 22kV,active,Nghệ An,19.2342,104.92
+50266,10054,three-phase,22kV and above,active,Thừa Thiên Huế,16.4674,107.5905
+50267,10054,three-phase,22kV and above,active,Tây Ninh,11.3352,106.1099
+50268,10054,three-phase,22kV and above,active,Hưng Yên,20.6547,106.0578
+50271,10055,three-phase,22kV and above,active,Kon Tum,14.3497,108.0005
+50272,10055,three-phase,22kV and above,active,Bắc Giang,21.282,106.1975
+50273,10055,three-phase,22kV and above,active,Hà Giang,22.8026,104.9784
+50274,10055,three-phase,22kV and above,active,Kon Tum,14.3497,108.0005
+50276,10056,three-phase,6kV to less than 22kV,active,Yên Bái,21.7168,104.8986
+50277,10056,three-phase,6kV to less than 22kV,active,Bình Phước,11.7512,106.7235
+50281,10057,three-phase,6kV to less than 22kV,active,Bình Định,13.886,109.1077
+50282,10057,three-phase,6kV to less than 22kV,active,Lâm Đồng,11.5753,108.1429
+50283,10057,three-phase,6kV to less than 22kV,active,Bình Định,13.886,109.1077
+50286,10058,three-phase,22kV and above,active,Quảng Trị,16.7943,106.9634
+50287,10058,three-phase,22kV and above,active,Bắc Ninh,21.1782,106.071
+50291,10059,three-phase,6kV to less than 22kV,active,Nghệ An,19.2342,104.92
+50292,10059,three-phase,6kV to less than 22kV,active,Cà Mau,9.1527,105.1961
 50296,10060,three-phase,less than 6kV,active,Đà Nẵng,16.0544,108.2022
-50301,10061,three-phase,"6kV to less than 22kV",active,Tây Ninh,11.3352,106.1099
-50302,10061,three-phase,"6kV to less than 22kV",active,Lâm Đồng,11.5753,108.1429
+50301,10061,three-phase,6kV to less than 22kV,active,Tây Ninh,11.3352,106.1099
+50302,10061,three-phase,6kV to less than 22kV,active,Lâm Đồng,11.5753,108.1429
 50306,10062,three-phase,less than 6kV,active,Hưng Yên,20.6547,106.0578
 50307,10062,three-phase,less than 6kV,active,Sóc Trăng,9.6025,105.9739
 50308,10062,three-phase,less than 6kV,active,Hòa Bình,20.8275,105.3391
 50309,10062,three-phase,less than 6kV,active,Bến Tre,10.2434,106.3756
 50310,10062,three-phase,less than 6kV,active,Bến Tre,10.2434,106.3756
-50311,10063,three-phase,"22kV and above",active,Khánh Hòa,12.2585,109.0526
-50312,10063,three-phase,"22kV and above",active,Bình Định,13.886,109.1077
-50313,10063,three-phase,"22kV and above",active,Thanh Hóa,19.8067,105.7852
-50314,10063,three-phase,"22kV and above",active,Hải Dương,20.9373,106.3146
-50315,10063,three-phase,"22kV and above",active,Quảng Nam,15.5394,108.0191
-50316,10064,three-phase,"6kV to less than 22kV",active,Đồng Nai,11.0686,107.1676
-50317,10064,three-phase,"6kV to less than 22kV",active,TP. Hồ Chí Minh,10.8231,106.6297
-50318,10064,three-phase,"6kV to less than 22kV",active,Kiên Giang,9.825,105.1259
-50319,10064,three-phase,"6kV to less than 22kV",active,Quảng Nam,15.5394,108.0191
-50320,10064,three-phase,"6kV to less than 22kV",active,Yên Bái,21.7168,104.8986
+50311,10063,three-phase,22kV and above,active,Khánh Hòa,12.2585,109.0526
+50312,10063,three-phase,22kV and above,active,Bình Định,13.886,109.1077
+50313,10063,three-phase,22kV and above,active,Thanh Hóa,19.8067,105.7852
+50314,10063,three-phase,22kV and above,active,Hải Dương,20.9373,106.3146
+50315,10063,three-phase,22kV and above,active,Quảng Nam,15.5394,108.0191
+50316,10064,three-phase,6kV to less than 22kV,active,Đồng Nai,11.0686,107.1676
+50317,10064,three-phase,6kV to less than 22kV,active,TP. Hồ Chí Minh,10.8231,106.6297
+50318,10064,three-phase,6kV to less than 22kV,active,Kiên Giang,9.825,105.1259
+50319,10064,three-phase,6kV to less than 22kV,active,Quảng Nam,15.5394,108.0191
+50320,10064,three-phase,6kV to less than 22kV,active,Yên Bái,21.7168,104.8986
 50321,10065,three-phase,less than 6kV,active,Kiên Giang,9.825,105.1259
 50322,10065,three-phase,less than 6kV,active,Phú Thọ,21.422,105.2297
 50323,10065,three-phase,less than 6kV,active,Cần Thơ,10.0452,105.7469
 50324,10065,three-phase,less than 6kV,active,Bắc Giang,21.282,106.1975
 50325,10065,three-phase,less than 6kV,active,Bạc Liêu,9.294,105.7216
-50326,10066,three-phase,"22kV and above",active,Quảng Ninh,21.0064,107.2925
-50327,10066,three-phase,"22kV and above",active,Thanh Hóa,19.8067,105.7852
-50328,10066,three-phase,"22kV and above",active,Nghệ An,19.2342,104.92
-50331,10067,three-phase,"6kV to less than 22kV",active,Thừa Thiên Huế,16.4674,107.5905
-50332,10067,three-phase,"6kV to less than 22kV",active,Quảng Ngãi,15.1214,108.8044
+50326,10066,three-phase,22kV and above,active,Quảng Ninh,21.0064,107.2925
+50327,10066,three-phase,22kV and above,active,Thanh Hóa,19.8067,105.7852
+50328,10066,three-phase,22kV and above,active,Nghệ An,19.2342,104.92
+50331,10067,three-phase,6kV to less than 22kV,active,Thừa Thiên Huế,16.4674,107.5905
+50332,10067,three-phase,6kV to less than 22kV,active,Quảng Ngãi,15.1214,108.8044
 50336,10068,three-phase,less than 6kV,active,Hà Nội,21.0278,105.8342
 50337,10068,three-phase,less than 6kV,active,Quảng Ngãi,15.1214,108.8044
 50338,10068,three-phase,less than 6kV,active,Cao Bằng,22.6666,106.264
-50341,10069,three-phase,"6kV to less than 22kV",active,Ninh Bình,20.2506,105.9745
+50341,10069,three-phase,6kV to less than 22kV,active,Ninh Bình,20.2506,105.9745
 50346,10070,three-phase,less than 6kV,active,Bắc Kạn,22.1443,105.8345
 50347,10070,three-phase,less than 6kV,active,Bạc Liêu,9.294,105.7216
 50348,10070,three-phase,less than 6kV,active,Bắc Kạn,22.1443,105.8345
 50349,10070,three-phase,less than 6kV,active,Đắk Nông,12.2646,107.6098
-50351,10071,three-phase,"6kV to less than 22kV",active,Hà Nam,20.5835,105.923
-50352,10071,three-phase,"6kV to less than 22kV",active,Kiên Giang,9.825,105.1259
-50353,10071,three-phase,"6kV to less than 22kV",active,Bình Định,13.886,109.1077
-50356,10072,three-phase,"6kV to less than 22kV",active,Thanh Hóa,19.8067,105.7852
-50357,10072,three-phase,"6kV to less than 22kV",active,Cà Mau,9.1527,105.1961
+50351,10071,three-phase,6kV to less than 22kV,active,Hà Nam,20.5835,105.923
+50352,10071,three-phase,6kV to less than 22kV,active,Kiên Giang,9.825,105.1259
+50353,10071,three-phase,6kV to less than 22kV,active,Bình Định,13.886,109.1077
+50356,10072,three-phase,6kV to less than 22kV,active,Thanh Hóa,19.8067,105.7852
+50357,10072,three-phase,6kV to less than 22kV,active,Cà Mau,9.1527,105.1961
 50361,10073,three-phase,less than 6kV,active,Bến Tre,10.2434,106.3756
-50366,10074,three-phase,"22kV and above",active,Thái Nguyên,21.5672,105.8252
-50367,10074,three-phase,"22kV and above",active,Đồng Tháp,10.4938,105.6882
-50368,10074,three-phase,"22kV and above",active,Điện Biên,21.4064,103.0322
-50369,10074,three-phase,"22kV and above",active,Tây Ninh,11.3352,106.1099
-50370,10074,three-phase,"22kV and above",active,Thanh Hóa,19.8067,105.7852
+50366,10074,three-phase,22kV and above,active,Thái Nguyên,21.5672,105.8252
+50367,10074,three-phase,22kV and above,active,Đồng Tháp,10.4938,105.6882
+50368,10074,three-phase,22kV and above,active,Điện Biên,21.4064,103.0322
+50369,10074,three-phase,22kV and above,active,Tây Ninh,11.3352,106.1099
+50370,10074,three-phase,22kV and above,active,Thanh Hóa,19.8067,105.7852
 50371,10075,three-phase,less than 6kV,active,Điện Biên,21.4064,103.0322
-50376,10076,three-phase,"22kV and above",active,Phú Thọ,21.422,105.2297
-50381,10077,three-phase,"22kV and above",active,Bà rịa Vũng Tàu,10.5417,107.243
-50382,10077,three-phase,"22kV and above",active,Hải Dương,20.9373,106.3146
-50383,10077,three-phase,"22kV and above",active,Đắk Lắk,12.71,108.2378
-50384,10077,three-phase,"22kV and above",active,TP. Hồ Chí Minh,10.8231,106.6297
-50385,10077,three-phase,"22kV and above",active,Tây Ninh,11.3352,106.1099
-50386,10078,three-phase,"22kV and above",active,Quảng Ninh,21.0064,107.2925
-50387,10078,three-phase,"22kV and above",active,Gia Lai,13.8079,108.1094
+50376,10076,three-phase,22kV and above,active,Phú Thọ,21.422,105.2297
+50381,10077,three-phase,22kV and above,active,Bà rịa Vũng Tàu,10.5417,107.243
+50382,10077,three-phase,22kV and above,active,Hải Dương,20.9373,106.3146
+50383,10077,three-phase,22kV and above,active,Đắk Lắk,12.71,108.2378
+50384,10077,three-phase,22kV and above,active,TP. Hồ Chí Minh,10.8231,106.6297
+50385,10077,three-phase,22kV and above,active,Tây Ninh,11.3352,106.1099
+50386,10078,three-phase,22kV and above,active,Quảng Ninh,21.0064,107.2925
+50387,10078,three-phase,22kV and above,active,Gia Lai,13.8079,108.1094
 50391,10079,three-phase,less than 6kV,active,Bắc Kạn,22.1443,105.8345
 50392,10079,three-phase,less than 6kV,active,Thừa Thiên Huế,16.4674,107.5905
 50393,10079,three-phase,less than 6kV,active,Long An,10.6956,106.2431
-50396,10080,three-phase,"6kV to less than 22kV",active,Gia Lai,13.8079,108.1094
-50397,10080,three-phase,"6kV to less than 22kV",active,Lào Cai,22.4809,103.9755
-50398,10080,three-phase,"6kV to less than 22kV",active,Phú Yên,13.0882,109.0929
-50401,10081,three-phase,"22kV and above",active,Đồng Nai,11.0686,107.1676
-50402,10081,three-phase,"22kV and above",active,Cao Bằng,22.6666,106.264
-50403,10081,three-phase,"22kV and above",active,Tây Ninh,11.3352,106.1099
-50404,10081,three-phase,"22kV and above",active,Phú Yên,13.0882,109.0929
-50405,10081,three-phase,"22kV and above",active,Bạc Liêu,9.294,105.7216
+50396,10080,three-phase,6kV to less than 22kV,active,Gia Lai,13.8079,108.1094
+50397,10080,three-phase,6kV to less than 22kV,active,Lào Cai,22.4809,103.9755
+50398,10080,three-phase,6kV to less than 22kV,active,Phú Yên,13.0882,109.0929
+50401,10081,three-phase,22kV and above,active,Đồng Nai,11.0686,107.1676
+50402,10081,three-phase,22kV and above,active,Cao Bằng,22.6666,106.264
+50403,10081,three-phase,22kV and above,active,Tây Ninh,11.3352,106.1099
+50404,10081,three-phase,22kV and above,active,Phú Yên,13.0882,109.0929
+50405,10081,three-phase,22kV and above,active,Bạc Liêu,9.294,105.7216
 50406,10082,three-phase,less than 6kV,active,Trà Vinh,9.9513,106.3346
 50407,10082,three-phase,less than 6kV,active,Đắk Lắk,12.71,108.2378
 50408,10082,three-phase,less than 6kV,active,Sóc Trăng,9.6025,105.9739
 50409,10082,three-phase,less than 6kV,active,Thừa Thiên Huế,16.4674,107.5905
 50410,10082,three-phase,less than 6kV,active,Đồng Nai,11.0686,107.1676
-50411,10083,three-phase,"22kV and above",active,Quảng Ngãi,15.1214,108.8044
-50412,10083,three-phase,"22kV and above",active,Ninh Bình,20.2506,105.9745
-50413,10083,three-phase,"22kV and above",active,Sơn La,21.3269,103.9144
-50414,10083,three-phase,"22kV and above",active,Lai Châu,22.3862,103.4703
-50415,10083,three-phase,"22kV and above",active,Hà Tĩnh,18.342,105.8923
-50416,10084,three-phase,"6kV to less than 22kV",active,Yên Bái,21.7168,104.8986
-50417,10084,three-phase,"6kV to less than 22kV",active,Ninh Bình,20.2506,105.9745
+50411,10083,three-phase,22kV and above,active,Quảng Ngãi,15.1214,108.8044
+50412,10083,three-phase,22kV and above,active,Ninh Bình,20.2506,105.9745
+50413,10083,three-phase,22kV and above,active,Sơn La,21.3269,103.9144
+50414,10083,three-phase,22kV and above,active,Lai Châu,22.3862,103.4703
+50415,10083,three-phase,22kV and above,active,Hà Tĩnh,18.342,105.8923
+50416,10084,three-phase,6kV to less than 22kV,active,Yên Bái,21.7168,104.8986
+50417,10084,three-phase,6kV to less than 22kV,active,Ninh Bình,20.2506,105.9745
 50421,10085,three-phase,less than 6kV,active,Bến Tre,10.2434,106.3756
 50426,10086,three-phase,less than 6kV,active,Cà Mau,9.1527,105.1961
 50427,10086,three-phase,less than 6kV,active,Bến Tre,10.2434,106.3756
@@ -10255,69 +10255,69 @@ meter_id,contract_id,meter_type,voltage,status,location,latitude,longitude
 50432,10087,three-phase,less than 6kV,active,Ninh Thuận,11.6739,108.863
 50433,10087,three-phase,less than 6kV,active,Bình Định,13.886,109.1077
 50436,10088,three-phase,less than 6kV,active,Quảng Nam,15.5394,108.0191
-50441,10089,three-phase,"6kV to less than 22kV",active,Quảng Ngãi,15.1214,108.8044
-50446,10090,three-phase,"22kV and above",active,Lâm Đồng,11.5753,108.1429
-50451,10091,three-phase,"22kV and above",active,Lâm Đồng,11.5753,108.1429
-50452,10091,three-phase,"22kV and above",active,Tiền Giang,10.4493,106.3421
-50453,10091,three-phase,"22kV and above",active,Bình Định,13.886,109.1077
+50441,10089,three-phase,6kV to less than 22kV,active,Quảng Ngãi,15.1214,108.8044
+50446,10090,three-phase,22kV and above,active,Lâm Đồng,11.5753,108.1429
+50451,10091,three-phase,22kV and above,active,Lâm Đồng,11.5753,108.1429
+50452,10091,three-phase,22kV and above,active,Tiền Giang,10.4493,106.3421
+50453,10091,three-phase,22kV and above,active,Bình Định,13.886,109.1077
 50456,10092,three-phase,less than 6kV,active,Bình Phước,11.7512,106.7235
 50457,10092,three-phase,less than 6kV,active,Thừa Thiên Huế,16.4674,107.5905
 50458,10092,three-phase,less than 6kV,active,Tây Ninh,11.3352,106.1099
-50461,10093,three-phase,"6kV to less than 22kV",active,Đồng Tháp,10.4938,105.6882
-50466,10094,three-phase,"6kV to less than 22kV",active,Đắk Nông,12.2646,107.6098
-50467,10094,three-phase,"6kV to less than 22kV",active,Kon Tum,14.3497,108.0005
-50468,10094,three-phase,"6kV to less than 22kV",active,Gia Lai,13.8079,108.1094
-50469,10094,three-phase,"6kV to less than 22kV",active,Nghệ An,19.2342,104.92
-50471,10095,three-phase,"22kV and above",active,Bà rịa Vũng Tàu,10.5417,107.243
-50472,10095,three-phase,"22kV and above",active,Đắk Lắk,12.71,108.2378
-50473,10095,three-phase,"22kV and above",active,Hưng Yên,20.6547,106.0578
-50474,10095,three-phase,"22kV and above",active,Hậu Giang,9.7579,105.6413
-50476,10096,three-phase,"22kV and above",active,Phú Yên,13.0882,109.0929
-50477,10096,three-phase,"22kV and above",active,Hòa Bình,20.8275,105.3391
-50478,10096,three-phase,"22kV and above",active,Nghệ An,19.2342,104.92
+50461,10093,three-phase,6kV to less than 22kV,active,Đồng Tháp,10.4938,105.6882
+50466,10094,three-phase,6kV to less than 22kV,active,Đắk Nông,12.2646,107.6098
+50467,10094,three-phase,6kV to less than 22kV,active,Kon Tum,14.3497,108.0005
+50468,10094,three-phase,6kV to less than 22kV,active,Gia Lai,13.8079,108.1094
+50469,10094,three-phase,6kV to less than 22kV,active,Nghệ An,19.2342,104.92
+50471,10095,three-phase,22kV and above,active,Bà rịa Vũng Tàu,10.5417,107.243
+50472,10095,three-phase,22kV and above,active,Đắk Lắk,12.71,108.2378
+50473,10095,three-phase,22kV and above,active,Hưng Yên,20.6547,106.0578
+50474,10095,three-phase,22kV and above,active,Hậu Giang,9.7579,105.6413
+50476,10096,three-phase,22kV and above,active,Phú Yên,13.0882,109.0929
+50477,10096,three-phase,22kV and above,active,Hòa Bình,20.8275,105.3391
+50478,10096,three-phase,22kV and above,active,Nghệ An,19.2342,104.92
 50481,10097,three-phase,less than 6kV,active,Bến Tre,10.2434,106.3756
 50486,10098,three-phase,less than 6kV,active,Hải Dương,20.9373,106.3146
 50487,10098,three-phase,less than 6kV,active,Nghệ An,19.2342,104.92
 50491,10099,three-phase,less than 6kV,active,Nghệ An,19.2342,104.92
 50496,10100,three-phase,less than 6kV,active,Gia Lai,13.8079,108.1094
-50501,10101,three-phase,"22kV to 100kV",active,Tây Ninh,11.3352,106.1099
-50502,10101,three-phase,"22kV to 100kV",active,Thanh Hóa,19.8067,105.7852
-50503,10101,three-phase,"22kV to 100kV",active,Vĩnh Phúc,21.3609,105.5474
+50501,10101,three-phase,22kV to 100kV,active,Tây Ninh,11.3352,106.1099
+50502,10101,three-phase,22kV to 100kV,active,Thanh Hóa,19.8067,105.7852
+50503,10101,three-phase,22kV to 100kV,active,Vĩnh Phúc,21.3609,105.5474
 50506,10102,three-phase,less than 6kV,active,Sơn La,21.3269,103.9144
 50507,10102,three-phase,less than 6kV,active,Lâm Đồng,11.5753,108.1429
-50511,10103,three-phase,"100kV and above",active,Sơn La,21.3269,103.9144
-50512,10103,three-phase,"100kV and above",active,Vĩnh Phúc,21.3609,105.5474
-50513,10103,three-phase,"100kV and above",active,Đồng Nai,11.0686,107.1676
-50514,10103,three-phase,"100kV and above",active,Ninh Thuận,11.6739,108.863
-50516,10104,three-phase,"22kV to 100kV",active,Cao Bằng,22.6666,106.264
-50517,10104,three-phase,"22kV to 100kV",active,TP. Hồ Chí Minh,10.8231,106.6297
-50518,10104,three-phase,"22kV to 100kV",active,Long An,10.6956,106.2431
+50511,10103,three-phase,100kV and above,active,Sơn La,21.3269,103.9144
+50512,10103,three-phase,100kV and above,active,Vĩnh Phúc,21.3609,105.5474
+50513,10103,three-phase,100kV and above,active,Đồng Nai,11.0686,107.1676
+50514,10103,three-phase,100kV and above,active,Ninh Thuận,11.6739,108.863
+50516,10104,three-phase,22kV to 100kV,active,Cao Bằng,22.6666,106.264
+50517,10104,three-phase,22kV to 100kV,active,TP. Hồ Chí Minh,10.8231,106.6297
+50518,10104,three-phase,22kV to 100kV,active,Long An,10.6956,106.2431
 50521,10105,three-phase,less than 6kV,active,Kiên Giang,9.825,105.1259
 50522,10105,three-phase,less than 6kV,active,Lâm Đồng,11.5753,108.1429
 50523,10105,three-phase,less than 6kV,active,Đồng Tháp,10.4938,105.6882
-50526,10106,three-phase,"6kV to less than 22kV",active,Bắc Ninh,21.1782,106.071
-50527,10106,three-phase,"6kV to less than 22kV",active,Lâm Đồng,11.5753,108.1429
-50528,10106,three-phase,"6kV to less than 22kV",active,Nghệ An,19.2342,104.92
-50529,10106,three-phase,"6kV to less than 22kV",active,Bình Phước,11.7512,106.7235
-50530,10106,three-phase,"6kV to less than 22kV",active,Phú Thọ,21.422,105.2297
-50531,10107,three-phase,"100kV and above",active,An Giang,10.5216,105.1259
-50532,10107,three-phase,"100kV and above",active,Thái Bình,20.4463,106.3366
-50533,10107,three-phase,"100kV and above",active,Bắc Kạn,22.1443,105.8345
-50536,10108,three-phase,"6kV to less than 22kV",active,Quảng Trị,16.7943,106.9634
-50537,10108,three-phase,"6kV to less than 22kV",active,Hòa Bình,20.8275,105.3391
-50538,10108,three-phase,"6kV to less than 22kV",active,Hậu Giang,9.7579,105.6413
-50539,10108,three-phase,"6kV to less than 22kV",active,Bắc Giang,21.282,106.1975
-50540,10108,three-phase,"6kV to less than 22kV",active,Thanh Hóa,19.8067,105.7852
-50541,10109,three-phase,"6kV to less than 22kV",active,Hà Nam,20.5835,105.923
-50542,10109,three-phase,"6kV to less than 22kV",active,Quảng Ngãi,15.1214,108.8044
-50543,10109,three-phase,"6kV to less than 22kV",active,Tiền Giang,10.4493,106.3421
-50544,10109,three-phase,"6kV to less than 22kV",active,Đồng Nai,11.0686,107.1676
-50545,10109,three-phase,"6kV to less than 22kV",active,Đà Nẵng,16.0544,108.2022
-50546,10110,three-phase,"6kV to less than 22kV",active,Hà Nội,21.0278,105.8342
-50547,10110,three-phase,"6kV to less than 22kV",active,Kiên Giang,9.825,105.1259
-50551,10111,three-phase,"100kV and above",active,Đắk Lắk,12.71,108.2378
-50552,10111,three-phase,"100kV and above",active,Hòa Bình,20.8275,105.3391
-50553,10111,three-phase,"100kV and above",active,Bắc Giang,21.282,106.1975
+50526,10106,three-phase,6kV to less than 22kV,active,Bắc Ninh,21.1782,106.071
+50527,10106,three-phase,6kV to less than 22kV,active,Lâm Đồng,11.5753,108.1429
+50528,10106,three-phase,6kV to less than 22kV,active,Nghệ An,19.2342,104.92
+50529,10106,three-phase,6kV to less than 22kV,active,Bình Phước,11.7512,106.7235
+50530,10106,three-phase,6kV to less than 22kV,active,Phú Thọ,21.422,105.2297
+50531,10107,three-phase,100kV and above,active,An Giang,10.5216,105.1259
+50532,10107,three-phase,100kV and above,active,Thái Bình,20.4463,106.3366
+50533,10107,three-phase,100kV and above,active,Bắc Kạn,22.1443,105.8345
+50536,10108,three-phase,6kV to less than 22kV,active,Quảng Trị,16.7943,106.9634
+50537,10108,three-phase,6kV to less than 22kV,active,Hòa Bình,20.8275,105.3391
+50538,10108,three-phase,6kV to less than 22kV,active,Hậu Giang,9.7579,105.6413
+50539,10108,three-phase,6kV to less than 22kV,active,Bắc Giang,21.282,106.1975
+50540,10108,three-phase,6kV to less than 22kV,active,Thanh Hóa,19.8067,105.7852
+50541,10109,three-phase,6kV to less than 22kV,active,Hà Nam,20.5835,105.923
+50542,10109,three-phase,6kV to less than 22kV,active,Quảng Ngãi,15.1214,108.8044
+50543,10109,three-phase,6kV to less than 22kV,active,Tiền Giang,10.4493,106.3421
+50544,10109,three-phase,6kV to less than 22kV,active,Đồng Nai,11.0686,107.1676
+50545,10109,three-phase,6kV to less than 22kV,active,Đà Nẵng,16.0544,108.2022
+50546,10110,three-phase,6kV to less than 22kV,active,Hà Nội,21.0278,105.8342
+50547,10110,three-phase,6kV to less than 22kV,active,Kiên Giang,9.825,105.1259
+50551,10111,three-phase,100kV and above,active,Đắk Lắk,12.71,108.2378
+50552,10111,three-phase,100kV and above,active,Hòa Bình,20.8275,105.3391
+50553,10111,three-phase,100kV and above,active,Bắc Giang,21.282,106.1975
 50556,10112,three-phase,less than 6kV,active,Nghệ An,19.2342,104.92
 50557,10112,three-phase,less than 6kV,active,Hà Tĩnh,18.342,105.8923
 50561,10113,three-phase,less than 6kV,active,Quảng Nam,15.5394,108.0191
@@ -10325,11 +10325,11 @@ meter_id,contract_id,meter_type,voltage,status,location,latitude,longitude
 50563,10113,three-phase,less than 6kV,active,Tiền Giang,10.4493,106.3421
 50564,10113,three-phase,less than 6kV,active,Hải Dương,20.9373,106.3146
 50566,10114,three-phase,less than 6kV,active,Đồng Tháp,10.4938,105.6882
-50571,10115,three-phase,"6kV to less than 22kV",active,Quảng Bình,17.6103,106.3487
-50572,10115,three-phase,"6kV to less than 22kV",active,Bắc Ninh,21.1782,106.071
-50573,10115,three-phase,"6kV to less than 22kV",active,Yên Bái,21.7168,104.8986
-50574,10115,three-phase,"6kV to less than 22kV",active,Thừa Thiên Huế,16.4674,107.5905
-50575,10115,three-phase,"6kV to less than 22kV",active,Đồng Tháp,10.4938,105.6882
+50571,10115,three-phase,6kV to less than 22kV,active,Quảng Bình,17.6103,106.3487
+50572,10115,three-phase,6kV to less than 22kV,active,Bắc Ninh,21.1782,106.071
+50573,10115,three-phase,6kV to less than 22kV,active,Yên Bái,21.7168,104.8986
+50574,10115,three-phase,6kV to less than 22kV,active,Thừa Thiên Huế,16.4674,107.5905
+50575,10115,three-phase,6kV to less than 22kV,active,Đồng Tháp,10.4938,105.6882
 50576,10116,three-phase,less than 6kV,active,Bà rịa Vũng Tàu,10.5417,107.243
 50577,10116,three-phase,less than 6kV,active,Bắc Ninh,21.1782,106.071
 50578,10116,three-phase,less than 6kV,active,Lai Châu,22.3862,103.4703
@@ -10337,16 +10337,16 @@ meter_id,contract_id,meter_type,voltage,status,location,latitude,longitude
 50582,10117,three-phase,less than 6kV,active,Vĩnh Long,10.2396,105.9572
 50583,10117,three-phase,less than 6kV,active,Cà Mau,9.1527,105.1961
 50586,10118,three-phase,less than 6kV,active,Sơn La,21.3269,103.9144
-50591,10119,three-phase,"22kV to 100kV",active,Kon Tum,14.3497,108.0005
-50592,10119,three-phase,"22kV to 100kV",active,Nam Định,20.4388,106.1621
-50593,10119,three-phase,"22kV to 100kV",active,Hà Nội,21.0278,105.8342
-50594,10119,three-phase,"22kV to 100kV",active,Thái Nguyên,21.5672,105.8252
-50595,10119,three-phase,"22kV to 100kV",active,Tuyên Quang,21.7767,105.228
+50591,10119,three-phase,22kV to 100kV,active,Kon Tum,14.3497,108.0005
+50592,10119,three-phase,22kV to 100kV,active,Nam Định,20.4388,106.1621
+50593,10119,three-phase,22kV to 100kV,active,Hà Nội,21.0278,105.8342
+50594,10119,three-phase,22kV to 100kV,active,Thái Nguyên,21.5672,105.8252
+50595,10119,three-phase,22kV to 100kV,active,Tuyên Quang,21.7767,105.228
 50596,10120,three-phase,less than 6kV,active,Tây Ninh,11.3352,106.1099
-50601,10121,three-phase,"22kV to 100kV",active,Ninh Bình,20.2506,105.9745
-50602,10121,three-phase,"22kV to 100kV",active,Đồng Nai,11.0686,107.1676
-50603,10121,three-phase,"22kV to 100kV",active,Long An,10.6956,106.2431
-50606,10122,three-phase,"22kV to 100kV",active,Hải Dương,20.9373,106.3146
+50601,10121,three-phase,22kV to 100kV,active,Ninh Bình,20.2506,105.9745
+50602,10121,three-phase,22kV to 100kV,active,Đồng Nai,11.0686,107.1676
+50603,10121,three-phase,22kV to 100kV,active,Long An,10.6956,106.2431
+50606,10122,three-phase,22kV to 100kV,active,Hải Dương,20.9373,106.3146
 50611,10123,three-phase,less than 6kV,active,An Giang,10.5216,105.1259
 50612,10123,three-phase,less than 6kV,active,Bạc Liêu,9.294,105.7216
 50616,10124,three-phase,less than 6kV,active,Quảng Nam,15.5394,108.0191
@@ -10355,123 +10355,123 @@ meter_id,contract_id,meter_type,voltage,status,location,latitude,longitude
 50622,10125,three-phase,less than 6kV,active,Kon Tum,14.3497,108.0005
 50623,10125,three-phase,less than 6kV,active,Khánh Hòa,12.2585,109.0526
 50624,10125,three-phase,less than 6kV,active,Quảng Trị,16.7943,106.9634
-50626,10126,three-phase,"6kV to less than 22kV",active,Long An,10.6956,106.2431
-50631,10127,three-phase,"22kV to 100kV",active,Quảng Bình,17.6103,106.3487
-50632,10127,three-phase,"22kV to 100kV",active,Đồng Nai,11.0686,107.1676
-50633,10127,three-phase,"22kV to 100kV",active,An Giang,10.5216,105.1259
-50636,10128,three-phase,"22kV to 100kV",active,Hưng Yên,20.6547,106.0578
-50637,10128,three-phase,"22kV to 100kV",active,Phú Yên,13.0882,109.0929
-50638,10128,three-phase,"22kV to 100kV",active,Quảng Ngãi,15.1214,108.8044
-50639,10128,three-phase,"22kV to 100kV",active,Thừa Thiên Huế,16.4674,107.5905
+50626,10126,three-phase,6kV to less than 22kV,active,Long An,10.6956,106.2431
+50631,10127,three-phase,22kV to 100kV,active,Quảng Bình,17.6103,106.3487
+50632,10127,three-phase,22kV to 100kV,active,Đồng Nai,11.0686,107.1676
+50633,10127,three-phase,22kV to 100kV,active,An Giang,10.5216,105.1259
+50636,10128,three-phase,22kV to 100kV,active,Hưng Yên,20.6547,106.0578
+50637,10128,three-phase,22kV to 100kV,active,Phú Yên,13.0882,109.0929
+50638,10128,three-phase,22kV to 100kV,active,Quảng Ngãi,15.1214,108.8044
+50639,10128,three-phase,22kV to 100kV,active,Thừa Thiên Huế,16.4674,107.5905
 50641,10129,three-phase,less than 6kV,active,Sóc Trăng,9.6025,105.9739
 50642,10129,three-phase,less than 6kV,active,Thái Nguyên,21.5672,105.8252
 50643,10129,three-phase,less than 6kV,active,Đắk Nông,12.2646,107.6098
 50644,10129,three-phase,less than 6kV,active,Quảng Trị,16.7943,106.9634
 50646,10130,three-phase,less than 6kV,active,Phú Yên,13.0882,109.0929
-50651,10131,three-phase,"22kV to 100kV",active,Đắk Lắk,12.71,108.2378
-50652,10131,three-phase,"22kV to 100kV",active,Nam Định,20.4388,106.1621
-50653,10131,three-phase,"22kV to 100kV",active,Đắk Lắk,12.71,108.2378
-50654,10131,three-phase,"22kV to 100kV",active,Sóc Trăng,9.6025,105.9739
-50656,10132,three-phase,"100kV and above",active,Lâm Đồng,11.5753,108.1429
-50657,10132,three-phase,"100kV and above",active,Kiên Giang,9.825,105.1259
-50661,10133,three-phase,"22kV to 100kV",active,Ninh Thuận,11.6739,108.863
-50662,10133,three-phase,"22kV to 100kV",active,Cà Mau,9.1527,105.1961
-50663,10133,three-phase,"22kV to 100kV",active,Đắk Nông,12.2646,107.6098
-50666,10134,three-phase,"6kV to less than 22kV",active,Yên Bái,21.7168,104.8986
-50667,10134,three-phase,"6kV to less than 22kV",active,Vĩnh Long,10.2396,105.9572
-50668,10134,three-phase,"6kV to less than 22kV",active,An Giang,10.5216,105.1259
-50671,10135,three-phase,"22kV to 100kV",active,Đồng Tháp,10.4938,105.6882
-50672,10135,three-phase,"22kV to 100kV",active,Đắk Nông,12.2646,107.6098
-50673,10135,three-phase,"22kV to 100kV",active,Bắc Ninh,21.1782,106.071
-50676,10136,three-phase,"6kV to less than 22kV",active,Bắc Giang,21.282,106.1975
-50677,10136,three-phase,"6kV to less than 22kV",active,Quảng Trị,16.7943,106.9634
-50678,10136,three-phase,"6kV to less than 22kV",active,Yên Bái,21.7168,104.8986
-50679,10136,three-phase,"6kV to less than 22kV",active,Thái Bình,20.4463,106.3366
-50680,10136,three-phase,"6kV to less than 22kV",active,Bà rịa Vũng Tàu,10.5417,107.243
-50681,10137,three-phase,"22kV to 100kV",active,Đắk Lắk,12.71,108.2378
-50686,10138,three-phase,"6kV to less than 22kV",active,Đắk Nông,12.2646,107.6098
-50691,10139,three-phase,"22kV to 100kV",active,Vĩnh Phúc,21.3609,105.5474
-50692,10139,three-phase,"22kV to 100kV",active,Trà Vinh,9.9513,106.3346
-50696,10140,three-phase,"6kV to less than 22kV",active,Hà Giang,22.8026,104.9784
-50697,10140,three-phase,"6kV to less than 22kV",active,Thừa Thiên Huế,16.4674,107.5905
-50698,10140,three-phase,"6kV to less than 22kV",active,Hòa Bình,20.8275,105.3391
-50699,10140,three-phase,"6kV to less than 22kV",active,Bắc Ninh,21.1782,106.071
-50701,10141,three-phase,"6kV to less than 22kV",active,Bà rịa Vũng Tàu,10.5417,107.243
-50702,10141,three-phase,"6kV to less than 22kV",active,Kiên Giang,9.825,105.1259
-50703,10141,three-phase,"6kV to less than 22kV",active,Kon Tum,14.3497,108.0005
-50704,10141,three-phase,"6kV to less than 22kV",active,Đắk Nông,12.2646,107.6098
+50651,10131,three-phase,22kV to 100kV,active,Đắk Lắk,12.71,108.2378
+50652,10131,three-phase,22kV to 100kV,active,Nam Định,20.4388,106.1621
+50653,10131,three-phase,22kV to 100kV,active,Đắk Lắk,12.71,108.2378
+50654,10131,three-phase,22kV to 100kV,active,Sóc Trăng,9.6025,105.9739
+50656,10132,three-phase,100kV and above,active,Lâm Đồng,11.5753,108.1429
+50657,10132,three-phase,100kV and above,active,Kiên Giang,9.825,105.1259
+50661,10133,three-phase,22kV to 100kV,active,Ninh Thuận,11.6739,108.863
+50662,10133,three-phase,22kV to 100kV,active,Cà Mau,9.1527,105.1961
+50663,10133,three-phase,22kV to 100kV,active,Đắk Nông,12.2646,107.6098
+50666,10134,three-phase,6kV to less than 22kV,active,Yên Bái,21.7168,104.8986
+50667,10134,three-phase,6kV to less than 22kV,active,Vĩnh Long,10.2396,105.9572
+50668,10134,three-phase,6kV to less than 22kV,active,An Giang,10.5216,105.1259
+50671,10135,three-phase,22kV to 100kV,active,Đồng Tháp,10.4938,105.6882
+50672,10135,three-phase,22kV to 100kV,active,Đắk Nông,12.2646,107.6098
+50673,10135,three-phase,22kV to 100kV,active,Bắc Ninh,21.1782,106.071
+50676,10136,three-phase,6kV to less than 22kV,active,Bắc Giang,21.282,106.1975
+50677,10136,three-phase,6kV to less than 22kV,active,Quảng Trị,16.7943,106.9634
+50678,10136,three-phase,6kV to less than 22kV,active,Yên Bái,21.7168,104.8986
+50679,10136,three-phase,6kV to less than 22kV,active,Thái Bình,20.4463,106.3366
+50680,10136,three-phase,6kV to less than 22kV,active,Bà rịa Vũng Tàu,10.5417,107.243
+50681,10137,three-phase,22kV to 100kV,active,Đắk Lắk,12.71,108.2378
+50686,10138,three-phase,6kV to less than 22kV,active,Đắk Nông,12.2646,107.6098
+50691,10139,three-phase,22kV to 100kV,active,Vĩnh Phúc,21.3609,105.5474
+50692,10139,three-phase,22kV to 100kV,active,Trà Vinh,9.9513,106.3346
+50696,10140,three-phase,6kV to less than 22kV,active,Hà Giang,22.8026,104.9784
+50697,10140,three-phase,6kV to less than 22kV,active,Thừa Thiên Huế,16.4674,107.5905
+50698,10140,three-phase,6kV to less than 22kV,active,Hòa Bình,20.8275,105.3391
+50699,10140,three-phase,6kV to less than 22kV,active,Bắc Ninh,21.1782,106.071
+50701,10141,three-phase,6kV to less than 22kV,active,Bà rịa Vũng Tàu,10.5417,107.243
+50702,10141,three-phase,6kV to less than 22kV,active,Kiên Giang,9.825,105.1259
+50703,10141,three-phase,6kV to less than 22kV,active,Kon Tum,14.3497,108.0005
+50704,10141,three-phase,6kV to less than 22kV,active,Đắk Nông,12.2646,107.6098
 50706,10142,three-phase,less than 6kV,active,Hưng Yên,20.6547,106.0578
 50707,10142,three-phase,less than 6kV,active,Ninh Bình,20.2506,105.9745
 50708,10142,three-phase,less than 6kV,active,TP. Hồ Chí Minh,10.8231,106.6297
 50709,10142,three-phase,less than 6kV,active,Nghệ An,19.2342,104.92
 50711,10143,three-phase,less than 6kV,active,Hà Giang,22.8026,104.9784
 50712,10143,three-phase,less than 6kV,active,Bạc Liêu,9.294,105.7216
-50716,10144,three-phase,"22kV to 100kV",active,Hòa Bình,20.8275,105.3391
-50717,10144,three-phase,"22kV to 100kV",active,Bà rịa Vũng Tàu,10.5417,107.243
-50718,10144,three-phase,"22kV to 100kV",active,Hậu Giang,9.7579,105.6413
-50719,10144,three-phase,"22kV to 100kV",active,Quảng Bình,17.6103,106.3487
-50720,10144,three-phase,"22kV to 100kV",active,Bình Phước,11.7512,106.7235
+50716,10144,three-phase,22kV to 100kV,active,Hòa Bình,20.8275,105.3391
+50717,10144,three-phase,22kV to 100kV,active,Bà rịa Vũng Tàu,10.5417,107.243
+50718,10144,three-phase,22kV to 100kV,active,Hậu Giang,9.7579,105.6413
+50719,10144,three-phase,22kV to 100kV,active,Quảng Bình,17.6103,106.3487
+50720,10144,three-phase,22kV to 100kV,active,Bình Phước,11.7512,106.7235
 50721,10145,three-phase,less than 6kV,active,Bình Thuận,11.0904,108.0721
 50722,10145,three-phase,less than 6kV,active,Phú Yên,13.0882,109.0929
-50726,10146,three-phase,"100kV and above",active,Quảng Ninh,21.0064,107.2925
-50727,10146,three-phase,"100kV and above",active,Đắk Lắk,12.71,108.2378
-50731,10147,three-phase,"22kV to 100kV",active,Hà Nội,21.0278,105.8342
-50732,10147,three-phase,"22kV to 100kV",active,Hòa Bình,20.8275,105.3391
-50733,10147,three-phase,"22kV to 100kV",active,Nghệ An,19.2342,104.92
-50734,10147,three-phase,"22kV to 100kV",active,Lâm Đồng,11.5753,108.1429
-50736,10148,three-phase,"22kV to 100kV",active,Yên Bái,21.7168,104.8986
-50737,10148,three-phase,"22kV to 100kV",active,Hậu Giang,9.7579,105.6413
-50738,10148,three-phase,"22kV to 100kV",active,Ninh Thuận,11.6739,108.863
-50739,10148,three-phase,"22kV to 100kV",active,Hưng Yên,20.6547,106.0578
-50740,10148,three-phase,"22kV to 100kV",active,Hải Phòng,20.8449,106.6881
-50741,10149,three-phase,"100kV and above",active,Hà Nội,21.0278,105.8342
-50746,10150,three-phase,"100kV and above",active,Bắc Kạn,22.1443,105.8345
-50747,10150,three-phase,"100kV and above",active,Lai Châu,22.3862,103.4703
-50748,10150,three-phase,"100kV and above",active,An Giang,10.5216,105.1259
-50749,10150,three-phase,"100kV and above",active,Đồng Nai,11.0686,107.1676
-50751,10151,three-phase,"100kV and above",active,Bình Thuận,11.0904,108.0721
-50752,10151,three-phase,"100kV and above",active,Hậu Giang,9.7579,105.6413
-50753,10151,three-phase,"100kV and above",active,Hòa Bình,20.8275,105.3391
-50756,10152,three-phase,"100kV and above",active,Nam Định,20.4388,106.1621
-50757,10152,three-phase,"100kV and above",active,Lào Cai,22.4809,103.9755
-50761,10153,three-phase,"100kV and above",active,Bắc Giang,21.282,106.1975
-50762,10153,three-phase,"100kV and above",active,Đắk Lắk,12.71,108.2378
-50763,10153,three-phase,"100kV and above",active,Thái Bình,20.4463,106.3366
-50766,10154,three-phase,"22kV to 100kV",active,Hưng Yên,20.6547,106.0578
-50771,10155,three-phase,"22kV to 100kV",active,Hà Tĩnh,18.342,105.8923
-50772,10155,three-phase,"22kV to 100kV",active,Kon Tum,14.3497,108.0005
-50773,10155,three-phase,"22kV to 100kV",active,Sóc Trăng,9.6025,105.9739
-50774,10155,three-phase,"22kV to 100kV",active,Hà Giang,22.8026,104.9784
-50775,10155,three-phase,"22kV to 100kV",active,Cà Mau,9.1527,105.1961
-50776,10156,three-phase,"100kV and above",active,Bình Thuận,11.0904,108.0721
-50777,10156,three-phase,"100kV and above",active,Bắc Giang,21.282,106.1975
-50781,10157,three-phase,"22kV to 100kV",active,Vĩnh Long,10.2396,105.9572
-50782,10157,three-phase,"22kV to 100kV",active,Điện Biên,21.4064,103.0322
-50783,10157,three-phase,"22kV to 100kV",active,An Giang,10.5216,105.1259
-50784,10157,three-phase,"22kV to 100kV",active,Hòa Bình,20.8275,105.3391
-50785,10157,three-phase,"22kV to 100kV",active,Bạc Liêu,9.294,105.7216
-50786,10158,three-phase,"6kV to less than 22kV",active,Bắc Giang,21.282,106.1975
-50787,10158,three-phase,"6kV to less than 22kV",active,Thừa Thiên Huế,16.4674,107.5905
-50791,10159,three-phase,"22kV to 100kV",active,Nghệ An,19.2342,104.92
-50792,10159,three-phase,"22kV to 100kV",active,Hà Tĩnh,18.342,105.8923
-50793,10159,three-phase,"22kV to 100kV",active,Đắk Lắk,12.71,108.2378
-50794,10159,three-phase,"22kV to 100kV",active,Quảng Trị,16.7943,106.9634
-50795,10159,three-phase,"22kV to 100kV",active,Bình Định,13.886,109.1077
-50796,10160,three-phase,"22kV to 100kV",active,Thái Nguyên,21.5672,105.8252
-50797,10160,three-phase,"22kV to 100kV",active,Bình Dương,11.3254,106.477
-50798,10160,three-phase,"22kV to 100kV",active,Ninh Thuận,11.6739,108.863
-50801,10161,three-phase,"100kV and above",active,Đắk Nông,12.2646,107.6098
-50802,10161,three-phase,"100kV and above",active,Tây Ninh,11.3352,106.1099
-50806,10162,three-phase,"22kV to 100kV",active,Nam Định,20.4388,106.1621
-50807,10162,three-phase,"22kV to 100kV",active,Lào Cai,22.4809,103.9755
-50808,10162,three-phase,"22kV to 100kV",active,Thái Bình,20.4463,106.3366
-50809,10162,three-phase,"22kV to 100kV",active,Quảng Bình,17.6103,106.3487
-50810,10162,three-phase,"22kV to 100kV",active,Đắk Lắk,12.71,108.2378
-50811,10163,three-phase,"6kV to less than 22kV",active,Kon Tum,14.3497,108.0005
-50812,10163,three-phase,"6kV to less than 22kV",active,Gia Lai,13.8079,108.1094
-50813,10163,three-phase,"6kV to less than 22kV",active,Sóc Trăng,9.6025,105.9739
-50814,10163,three-phase,"6kV to less than 22kV",active,Hà Nội,21.0278,105.8342
-50815,10163,three-phase,"6kV to less than 22kV",active,Bến Tre,10.2434,106.3756
+50726,10146,three-phase,100kV and above,active,Quảng Ninh,21.0064,107.2925
+50727,10146,three-phase,100kV and above,active,Đắk Lắk,12.71,108.2378
+50731,10147,three-phase,22kV to 100kV,active,Hà Nội,21.0278,105.8342
+50732,10147,three-phase,22kV to 100kV,active,Hòa Bình,20.8275,105.3391
+50733,10147,three-phase,22kV to 100kV,active,Nghệ An,19.2342,104.92
+50734,10147,three-phase,22kV to 100kV,active,Lâm Đồng,11.5753,108.1429
+50736,10148,three-phase,22kV to 100kV,active,Yên Bái,21.7168,104.8986
+50737,10148,three-phase,22kV to 100kV,active,Hậu Giang,9.7579,105.6413
+50738,10148,three-phase,22kV to 100kV,active,Ninh Thuận,11.6739,108.863
+50739,10148,three-phase,22kV to 100kV,active,Hưng Yên,20.6547,106.0578
+50740,10148,three-phase,22kV to 100kV,active,Hải Phòng,20.8449,106.6881
+50741,10149,three-phase,100kV and above,active,Hà Nội,21.0278,105.8342
+50746,10150,three-phase,100kV and above,active,Bắc Kạn,22.1443,105.8345
+50747,10150,three-phase,100kV and above,active,Lai Châu,22.3862,103.4703
+50748,10150,three-phase,100kV and above,active,An Giang,10.5216,105.1259
+50749,10150,three-phase,100kV and above,active,Đồng Nai,11.0686,107.1676
+50751,10151,three-phase,100kV and above,active,Bình Thuận,11.0904,108.0721
+50752,10151,three-phase,100kV and above,active,Hậu Giang,9.7579,105.6413
+50753,10151,three-phase,100kV and above,active,Hòa Bình,20.8275,105.3391
+50756,10152,three-phase,100kV and above,active,Nam Định,20.4388,106.1621
+50757,10152,three-phase,100kV and above,active,Lào Cai,22.4809,103.9755
+50761,10153,three-phase,100kV and above,active,Bắc Giang,21.282,106.1975
+50762,10153,three-phase,100kV and above,active,Đắk Lắk,12.71,108.2378
+50763,10153,three-phase,100kV and above,active,Thái Bình,20.4463,106.3366
+50766,10154,three-phase,22kV to 100kV,active,Hưng Yên,20.6547,106.0578
+50771,10155,three-phase,22kV to 100kV,active,Hà Tĩnh,18.342,105.8923
+50772,10155,three-phase,22kV to 100kV,active,Kon Tum,14.3497,108.0005
+50773,10155,three-phase,22kV to 100kV,active,Sóc Trăng,9.6025,105.9739
+50774,10155,three-phase,22kV to 100kV,active,Hà Giang,22.8026,104.9784
+50775,10155,three-phase,22kV to 100kV,active,Cà Mau,9.1527,105.1961
+50776,10156,three-phase,100kV and above,active,Bình Thuận,11.0904,108.0721
+50777,10156,three-phase,100kV and above,active,Bắc Giang,21.282,106.1975
+50781,10157,three-phase,22kV to 100kV,active,Vĩnh Long,10.2396,105.9572
+50782,10157,three-phase,22kV to 100kV,active,Điện Biên,21.4064,103.0322
+50783,10157,three-phase,22kV to 100kV,active,An Giang,10.5216,105.1259
+50784,10157,three-phase,22kV to 100kV,active,Hòa Bình,20.8275,105.3391
+50785,10157,three-phase,22kV to 100kV,active,Bạc Liêu,9.294,105.7216
+50786,10158,three-phase,6kV to less than 22kV,active,Bắc Giang,21.282,106.1975
+50787,10158,three-phase,6kV to less than 22kV,active,Thừa Thiên Huế,16.4674,107.5905
+50791,10159,three-phase,22kV to 100kV,active,Nghệ An,19.2342,104.92
+50792,10159,three-phase,22kV to 100kV,active,Hà Tĩnh,18.342,105.8923
+50793,10159,three-phase,22kV to 100kV,active,Đắk Lắk,12.71,108.2378
+50794,10159,three-phase,22kV to 100kV,active,Quảng Trị,16.7943,106.9634
+50795,10159,three-phase,22kV to 100kV,active,Bình Định,13.886,109.1077
+50796,10160,three-phase,22kV to 100kV,active,Thái Nguyên,21.5672,105.8252
+50797,10160,three-phase,22kV to 100kV,active,Bình Dương,11.3254,106.477
+50798,10160,three-phase,22kV to 100kV,active,Ninh Thuận,11.6739,108.863
+50801,10161,three-phase,100kV and above,active,Đắk Nông,12.2646,107.6098
+50802,10161,three-phase,100kV and above,active,Tây Ninh,11.3352,106.1099
+50806,10162,three-phase,22kV to 100kV,active,Nam Định,20.4388,106.1621
+50807,10162,three-phase,22kV to 100kV,active,Lào Cai,22.4809,103.9755
+50808,10162,three-phase,22kV to 100kV,active,Thái Bình,20.4463,106.3366
+50809,10162,three-phase,22kV to 100kV,active,Quảng Bình,17.6103,106.3487
+50810,10162,three-phase,22kV to 100kV,active,Đắk Lắk,12.71,108.2378
+50811,10163,three-phase,6kV to less than 22kV,active,Kon Tum,14.3497,108.0005
+50812,10163,three-phase,6kV to less than 22kV,active,Gia Lai,13.8079,108.1094
+50813,10163,three-phase,6kV to less than 22kV,active,Sóc Trăng,9.6025,105.9739
+50814,10163,three-phase,6kV to less than 22kV,active,Hà Nội,21.0278,105.8342
+50815,10163,three-phase,6kV to less than 22kV,active,Bến Tre,10.2434,106.3756
 50816,10164,three-phase,less than 6kV,active,Đắk Lắk,12.71,108.2378
 50817,10164,three-phase,less than 6kV,active,Bà rịa Vũng Tàu,10.5417,107.243
 50821,10165,three-phase,less than 6kV,active,Đồng Tháp,10.4938,105.6882
@@ -10479,111 +10479,111 @@ meter_id,contract_id,meter_type,voltage,status,location,latitude,longitude
 50823,10165,three-phase,less than 6kV,active,Quảng Ninh,21.0064,107.2925
 50824,10165,three-phase,less than 6kV,active,Hà Tĩnh,18.342,105.8923
 50825,10165,three-phase,less than 6kV,active,Sóc Trăng,9.6025,105.9739
-50826,10166,three-phase,"6kV to less than 22kV",active,Thái Bình,20.4463,106.3366
-50827,10166,three-phase,"6kV to less than 22kV",active,Đồng Nai,11.0686,107.1676
-50828,10166,three-phase,"6kV to less than 22kV",active,Sơn La,21.3269,103.9144
-50829,10166,three-phase,"6kV to less than 22kV",active,Cà Mau,9.1527,105.1961
-50830,10166,three-phase,"6kV to less than 22kV",active,Kon Tum,14.3497,108.0005
-50831,10167,three-phase,"100kV and above",active,Thanh Hóa,19.8067,105.7852
-50832,10167,three-phase,"100kV and above",active,Hòa Bình,20.8275,105.3391
-50833,10167,three-phase,"100kV and above",active,Thừa Thiên Huế,16.4674,107.5905
-50836,10168,three-phase,"6kV to less than 22kV",active,Điện Biên,21.4064,103.0322
-50837,10168,three-phase,"6kV to less than 22kV",active,Thái Nguyên,21.5672,105.8252
-50838,10168,three-phase,"6kV to less than 22kV",active,Hà Tĩnh,18.342,105.8923
-50839,10168,three-phase,"6kV to less than 22kV",active,Sơn La,21.3269,103.9144
-50841,10169,three-phase,"22kV to 100kV",active,Tiền Giang,10.4493,106.3421
-50842,10169,three-phase,"22kV to 100kV",active,Bắc Ninh,21.1782,106.071
-50843,10169,three-phase,"22kV to 100kV",active,Thái Nguyên,21.5672,105.8252
-50844,10169,three-phase,"22kV to 100kV",active,Hải Dương,20.9373,106.3146
-50846,10170,three-phase,"6kV to less than 22kV",active,Phú Yên,13.0882,109.0929
-50847,10170,three-phase,"6kV to less than 22kV",active,Bạc Liêu,9.294,105.7216
-50851,10171,three-phase,"22kV to 100kV",active,Hưng Yên,20.6547,106.0578
-50852,10171,three-phase,"22kV to 100kV",active,Thanh Hóa,19.8067,105.7852
-50856,10172,three-phase,"6kV to less than 22kV",active,An Giang,10.5216,105.1259
+50826,10166,three-phase,6kV to less than 22kV,active,Thái Bình,20.4463,106.3366
+50827,10166,three-phase,6kV to less than 22kV,active,Đồng Nai,11.0686,107.1676
+50828,10166,three-phase,6kV to less than 22kV,active,Sơn La,21.3269,103.9144
+50829,10166,three-phase,6kV to less than 22kV,active,Cà Mau,9.1527,105.1961
+50830,10166,three-phase,6kV to less than 22kV,active,Kon Tum,14.3497,108.0005
+50831,10167,three-phase,100kV and above,active,Thanh Hóa,19.8067,105.7852
+50832,10167,three-phase,100kV and above,active,Hòa Bình,20.8275,105.3391
+50833,10167,three-phase,100kV and above,active,Thừa Thiên Huế,16.4674,107.5905
+50836,10168,three-phase,6kV to less than 22kV,active,Điện Biên,21.4064,103.0322
+50837,10168,three-phase,6kV to less than 22kV,active,Thái Nguyên,21.5672,105.8252
+50838,10168,three-phase,6kV to less than 22kV,active,Hà Tĩnh,18.342,105.8923
+50839,10168,three-phase,6kV to less than 22kV,active,Sơn La,21.3269,103.9144
+50841,10169,three-phase,22kV to 100kV,active,Tiền Giang,10.4493,106.3421
+50842,10169,three-phase,22kV to 100kV,active,Bắc Ninh,21.1782,106.071
+50843,10169,three-phase,22kV to 100kV,active,Thái Nguyên,21.5672,105.8252
+50844,10169,three-phase,22kV to 100kV,active,Hải Dương,20.9373,106.3146
+50846,10170,three-phase,6kV to less than 22kV,active,Phú Yên,13.0882,109.0929
+50847,10170,three-phase,6kV to less than 22kV,active,Bạc Liêu,9.294,105.7216
+50851,10171,three-phase,22kV to 100kV,active,Hưng Yên,20.6547,106.0578
+50852,10171,three-phase,22kV to 100kV,active,Thanh Hóa,19.8067,105.7852
+50856,10172,three-phase,6kV to less than 22kV,active,An Giang,10.5216,105.1259
 50861,10173,three-phase,less than 6kV,active,Hải Dương,20.9373,106.3146
 50862,10173,three-phase,less than 6kV,active,Gia Lai,13.8079,108.1094
 50863,10173,three-phase,less than 6kV,active,Thanh Hóa,19.8067,105.7852
 50866,10174,three-phase,less than 6kV,active,Hà Nam,20.5835,105.923
-50871,10175,three-phase,"6kV to less than 22kV",active,Bình Định,13.886,109.1077
-50872,10175,three-phase,"6kV to less than 22kV",active,Vĩnh Phúc,21.3609,105.5474
-50873,10175,three-phase,"6kV to less than 22kV",active,Kon Tum,14.3497,108.0005
-50874,10175,three-phase,"6kV to less than 22kV",active,Lạng Sơn,21.8537,106.7615
-50876,10176,three-phase,"100kV and above",active,Hải Dương,20.9373,106.3146
-50877,10176,three-phase,"100kV and above",active,Vĩnh Phúc,21.3609,105.5474
+50871,10175,three-phase,6kV to less than 22kV,active,Bình Định,13.886,109.1077
+50872,10175,three-phase,6kV to less than 22kV,active,Vĩnh Phúc,21.3609,105.5474
+50873,10175,three-phase,6kV to less than 22kV,active,Kon Tum,14.3497,108.0005
+50874,10175,three-phase,6kV to less than 22kV,active,Lạng Sơn,21.8537,106.7615
+50876,10176,three-phase,100kV and above,active,Hải Dương,20.9373,106.3146
+50877,10176,three-phase,100kV and above,active,Vĩnh Phúc,21.3609,105.5474
 50881,10177,three-phase,less than 6kV,active,Cần Thơ,10.0452,105.7469
 50882,10177,three-phase,less than 6kV,active,Hà Nam,20.5835,105.923
 50883,10177,three-phase,less than 6kV,active,Nghệ An,19.2342,104.92
 50884,10177,three-phase,less than 6kV,active,Ninh Bình,20.2506,105.9745
-50886,10178,three-phase,"100kV and above",active,Quảng Bình,17.6103,106.3487
-50887,10178,three-phase,"100kV and above",active,Gia Lai,13.8079,108.1094
-50888,10178,three-phase,"100kV and above",active,Thừa Thiên Huế,16.4674,107.5905
-50889,10178,three-phase,"100kV and above",active,Bến Tre,10.2434,106.3756
-50891,10179,three-phase,"100kV and above",active,Hòa Bình,20.8275,105.3391
-50892,10179,three-phase,"100kV and above",active,Thái Nguyên,21.5672,105.8252
-50893,10179,three-phase,"100kV and above",active,Nam Định,20.4388,106.1621
-50894,10179,three-phase,"100kV and above",active,Hậu Giang,9.7579,105.6413
-50896,10180,three-phase,"6kV to less than 22kV",active,Thái Nguyên,21.5672,105.8252
-50897,10180,three-phase,"6kV to less than 22kV",active,Bà rịa Vũng Tàu,10.5417,107.243
-50898,10180,three-phase,"6kV to less than 22kV",active,Ninh Bình,20.2506,105.9745
-50899,10180,three-phase,"6kV to less than 22kV",active,Ninh Thuận,11.6739,108.863
-50900,10180,three-phase,"6kV to less than 22kV",active,Lào Cai,22.4809,103.9755
-50901,10181,three-phase,"100kV and above",active,Bình Phước,11.7512,106.7235
-50902,10181,three-phase,"100kV and above",active,Đắk Nông,12.2646,107.6098
-50903,10181,three-phase,"100kV and above",active,An Giang,10.5216,105.1259
-50904,10181,three-phase,"100kV and above",active,Đồng Nai,11.0686,107.1676
-50905,10181,three-phase,"100kV and above",active,Đắk Nông,12.2646,107.6098
+50886,10178,three-phase,100kV and above,active,Quảng Bình,17.6103,106.3487
+50887,10178,three-phase,100kV and above,active,Gia Lai,13.8079,108.1094
+50888,10178,three-phase,100kV and above,active,Thừa Thiên Huế,16.4674,107.5905
+50889,10178,three-phase,100kV and above,active,Bến Tre,10.2434,106.3756
+50891,10179,three-phase,100kV and above,active,Hòa Bình,20.8275,105.3391
+50892,10179,three-phase,100kV and above,active,Thái Nguyên,21.5672,105.8252
+50893,10179,three-phase,100kV and above,active,Nam Định,20.4388,106.1621
+50894,10179,three-phase,100kV and above,active,Hậu Giang,9.7579,105.6413
+50896,10180,three-phase,6kV to less than 22kV,active,Thái Nguyên,21.5672,105.8252
+50897,10180,three-phase,6kV to less than 22kV,active,Bà rịa Vũng Tàu,10.5417,107.243
+50898,10180,three-phase,6kV to less than 22kV,active,Ninh Bình,20.2506,105.9745
+50899,10180,three-phase,6kV to less than 22kV,active,Ninh Thuận,11.6739,108.863
+50900,10180,three-phase,6kV to less than 22kV,active,Lào Cai,22.4809,103.9755
+50901,10181,three-phase,100kV and above,active,Bình Phước,11.7512,106.7235
+50902,10181,three-phase,100kV and above,active,Đắk Nông,12.2646,107.6098
+50903,10181,three-phase,100kV and above,active,An Giang,10.5216,105.1259
+50904,10181,three-phase,100kV and above,active,Đồng Nai,11.0686,107.1676
+50905,10181,three-phase,100kV and above,active,Đắk Nông,12.2646,107.6098
 50906,10182,three-phase,less than 6kV,active,Bình Dương,11.3254,106.477
 50907,10182,three-phase,less than 6kV,active,Lạng Sơn,21.8537,106.7615
 50908,10182,three-phase,less than 6kV,active,Đắk Lắk,12.71,108.2378
 50909,10182,three-phase,less than 6kV,active,Quảng Ninh,21.0064,107.2925
 50910,10182,three-phase,less than 6kV,active,Tuyên Quang,21.7767,105.228
-50911,10183,three-phase,"22kV to 100kV",active,Bình Phước,11.7512,106.7235
-50912,10183,three-phase,"22kV to 100kV",active,Khánh Hòa,12.2585,109.0526
-50913,10183,three-phase,"22kV to 100kV",active,Lạng Sơn,21.8537,106.7615
-50914,10183,three-phase,"22kV to 100kV",active,Hà Tĩnh,18.342,105.8923
-50915,10183,three-phase,"22kV to 100kV",active,Hải Dương,20.9373,106.3146
+50911,10183,three-phase,22kV to 100kV,active,Bình Phước,11.7512,106.7235
+50912,10183,three-phase,22kV to 100kV,active,Khánh Hòa,12.2585,109.0526
+50913,10183,three-phase,22kV to 100kV,active,Lạng Sơn,21.8537,106.7615
+50914,10183,three-phase,22kV to 100kV,active,Hà Tĩnh,18.342,105.8923
+50915,10183,three-phase,22kV to 100kV,active,Hải Dương,20.9373,106.3146
 50916,10184,three-phase,less than 6kV,active,Nghệ An,19.2342,104.92
 50921,10185,three-phase,less than 6kV,active,Đà Nẵng,16.0544,108.2022
 50922,10185,three-phase,less than 6kV,active,Đồng Tháp,10.4938,105.6882
 50923,10185,three-phase,less than 6kV,active,Cà Mau,9.1527,105.1961
 50924,10185,three-phase,less than 6kV,active,Thái Bình,20.4463,106.3366
 50925,10185,three-phase,less than 6kV,active,Lâm Đồng,11.5753,108.1429
-50926,10186,three-phase,"6kV to less than 22kV",active,Hà Nam,20.5835,105.923
-50927,10186,three-phase,"6kV to less than 22kV",active,Quảng Bình,17.6103,106.3487
-50928,10186,three-phase,"6kV to less than 22kV",active,Cao Bằng,22.6666,106.264
-50929,10186,three-phase,"6kV to less than 22kV",active,Bắc Giang,21.282,106.1975
-50930,10186,three-phase,"6kV to less than 22kV",active,Phú Yên,13.0882,109.0929
+50926,10186,three-phase,6kV to less than 22kV,active,Hà Nam,20.5835,105.923
+50927,10186,three-phase,6kV to less than 22kV,active,Quảng Bình,17.6103,106.3487
+50928,10186,three-phase,6kV to less than 22kV,active,Cao Bằng,22.6666,106.264
+50929,10186,three-phase,6kV to less than 22kV,active,Bắc Giang,21.282,106.1975
+50930,10186,three-phase,6kV to less than 22kV,active,Phú Yên,13.0882,109.0929
 50931,10187,three-phase,less than 6kV,active,Đồng Tháp,10.4938,105.6882
 50932,10187,three-phase,less than 6kV,active,Hà Nam,20.5835,105.923
 50933,10187,three-phase,less than 6kV,active,Đắk Lắk,12.71,108.2378
 50934,10187,three-phase,less than 6kV,active,Bình Định,13.886,109.1077
 50935,10187,three-phase,less than 6kV,active,Tây Ninh,11.3352,106.1099
-50936,10188,three-phase,"6kV to less than 22kV",active,Lào Cai,22.4809,103.9755
-50937,10188,three-phase,"6kV to less than 22kV",active,Ninh Bình,20.2506,105.9745
-50938,10188,three-phase,"6kV to less than 22kV",active,Phú Thọ,21.422,105.2297
-50939,10188,three-phase,"6kV to less than 22kV",active,Bà rịa Vũng Tàu,10.5417,107.243
+50936,10188,three-phase,6kV to less than 22kV,active,Lào Cai,22.4809,103.9755
+50937,10188,three-phase,6kV to less than 22kV,active,Ninh Bình,20.2506,105.9745
+50938,10188,three-phase,6kV to less than 22kV,active,Phú Thọ,21.422,105.2297
+50939,10188,three-phase,6kV to less than 22kV,active,Bà rịa Vũng Tàu,10.5417,107.243
 50941,10189,three-phase,less than 6kV,active,Thái Nguyên,21.5672,105.8252
 50942,10189,three-phase,less than 6kV,active,Hậu Giang,9.7579,105.6413
 50943,10189,three-phase,less than 6kV,active,Đắk Nông,12.2646,107.6098
 50946,10190,three-phase,less than 6kV,active,Quảng Ninh,21.0064,107.2925
-50951,10191,three-phase,"6kV to less than 22kV",active,Quảng Ngãi,15.1214,108.8044
-50952,10191,three-phase,"6kV to less than 22kV",active,Điện Biên,21.4064,103.0322
-50953,10191,three-phase,"6kV to less than 22kV",active,Hải Phòng,20.8449,106.6881
-50954,10191,three-phase,"6kV to less than 22kV",active,Hải Phòng,20.8449,106.6881
-50956,10192,three-phase,"6kV to less than 22kV",active,Bình Định,13.886,109.1077
-50961,10193,three-phase,"22kV to 100kV",active,Hà Tĩnh,18.342,105.8923
-50966,10194,three-phase,"22kV to 100kV",active,Bà rịa Vũng Tàu,10.5417,107.243
-50967,10194,three-phase,"22kV to 100kV",active,Hưng Yên,20.6547,106.0578
-50968,10194,three-phase,"22kV to 100kV",active,Hậu Giang,9.7579,105.6413
-50971,10195,three-phase,"100kV and above",active,Sóc Trăng,9.6025,105.9739
-50972,10195,three-phase,"100kV and above",active,Hà Tĩnh,18.342,105.8923
-50976,10196,three-phase,"22kV to 100kV",active,Đà Nẵng,16.0544,108.2022
-50981,10197,three-phase,"100kV and above",active,Quảng Bình,17.6103,106.3487
-50986,10198,three-phase,"22kV to 100kV",active,Phú Thọ,21.422,105.2297
-50987,10198,three-phase,"22kV to 100kV",active,Yên Bái,21.7168,104.8986
-50991,10199,three-phase,"6kV to less than 22kV",active,Thừa Thiên Huế,16.4674,107.5905
-50996,10200,three-phase,"6kV to less than 22kV",active,Cao Bằng,22.6666,106.264
-50997,10200,three-phase,"6kV to less than 22kV",active,Gia Lai,13.8079,108.1094
+50951,10191,three-phase,6kV to less than 22kV,active,Quảng Ngãi,15.1214,108.8044
+50952,10191,three-phase,6kV to less than 22kV,active,Điện Biên,21.4064,103.0322
+50953,10191,three-phase,6kV to less than 22kV,active,Hải Phòng,20.8449,106.6881
+50954,10191,three-phase,6kV to less than 22kV,active,Hải Phòng,20.8449,106.6881
+50956,10192,three-phase,6kV to less than 22kV,active,Bình Định,13.886,109.1077
+50961,10193,three-phase,22kV to 100kV,active,Hà Tĩnh,18.342,105.8923
+50966,10194,three-phase,22kV to 100kV,active,Bà rịa Vũng Tàu,10.5417,107.243
+50967,10194,three-phase,22kV to 100kV,active,Hưng Yên,20.6547,106.0578
+50968,10194,three-phase,22kV to 100kV,active,Hậu Giang,9.7579,105.6413
+50971,10195,three-phase,100kV and above,active,Sóc Trăng,9.6025,105.9739
+50972,10195,three-phase,100kV and above,active,Hà Tĩnh,18.342,105.8923
+50976,10196,three-phase,22kV to 100kV,active,Đà Nẵng,16.0544,108.2022
+50981,10197,three-phase,100kV and above,active,Quảng Bình,17.6103,106.3487
+50986,10198,three-phase,22kV to 100kV,active,Phú Thọ,21.422,105.2297
+50987,10198,three-phase,22kV to 100kV,active,Yên Bái,21.7168,104.8986
+50991,10199,three-phase,6kV to less than 22kV,active,Thừa Thiên Huế,16.4674,107.5905
+50996,10200,three-phase,6kV to less than 22kV,active,Cao Bằng,22.6666,106.264
+50997,10200,three-phase,6kV to less than 22kV,active,Gia Lai,13.8079,108.1094
 51001,10201,three-phase,less than 6kV,active,Bình Thuận,11.0904,108.0721
 51002,10201,three-phase,less than 6kV,active,Hòa Bình,20.8275,105.3391
 51003,10201,three-phase,less than 6kV,active,Bắc Giang,21.282,106.1975

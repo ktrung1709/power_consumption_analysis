@@ -97,7 +97,7 @@ for contract_id in range(1, 10202):
         voltage_levels = ["less than 6kV", "6kV to less than 22kV", "22kV and above"]
         voltage = random.choice(voltage_levels)
     else:
-        voltage_levels = ["less than 6kV", "6kV to less than 22kV", "22kV to 100kV", "100kV and above"]
+        voltage_levels = ["less than 6kV", "6kV to less than 22kV", "22kV to less than 100kV", "100kV and above"]
         voltage = random.choice(voltage_levels)
     
     # Determine number of meters for commercial and industrial customers
