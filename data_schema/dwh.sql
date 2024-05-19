@@ -7,14 +7,14 @@ CREATE TABLE dwh.dim_customer (
     email VARCHAR(255) unique,
     address VARCHAR(255),
     customer_type VARCHAR(20),
-    updated_time TIMESTAMP 
+    updated_date DATE DEFAULT CURRENT_DATE
 );
 
 CREATE TABLE dwh.dim_contract (
     contract_id INT PRIMARY KEY,
     date_created DATE,
     status varchar(20),
-    updated_time TIMESTAMP
+    updated_date DATE DEFAULT CURRENT_DATE
 );
 
 CREATE TABLE dwh.dim_electric_meter (
@@ -25,7 +25,7 @@ CREATE TABLE dwh.dim_electric_meter (
     location VARCHAR(255),
     latitude FLOAT8,
     longitude FLOAT8,
-    updated_time TIMESTAMP
+    updated_date DATE DEFAULT CURRENT_DATE
 );
 
 CREATE TABLE dwh.dim_date (

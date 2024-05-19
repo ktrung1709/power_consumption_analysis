@@ -6,7 +6,8 @@ CREATE TABLE cmis.customer (
     phone VARCHAR(255) unique,
     email VARCHAR(255) unique,
     address VARCHAR(255),
-    customer_type VARCHAR(20)
+    customer_type VARCHAR(20),
+    updated_date DATE DEFAULT CURRENT_DATE
 );
 
 CREATE TABLE cmis.contract (
@@ -14,6 +15,7 @@ CREATE TABLE cmis.contract (
     customer_id INT unique,
     date_created DATE,
     status varchar(20),
+    updated_date DATE DEFAULT CURRENT_DATE
     FOREIGN KEY (customer_id) REFERENCES cmis.customer(customer_id)
 );
 
@@ -26,6 +28,7 @@ CREATE TABLE cmis.electric_meter (
     location VARCHAR(255),
     latitude FLOAT8,
     longitude FLOAT8,
+    updated_date DATE DEFAULT CURRENT_DATE
     FOREIGN KEY (contract_id) REFERENCES cmis.contract(contract_id)
 );
 
