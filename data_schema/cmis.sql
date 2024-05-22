@@ -28,6 +28,7 @@ CREATE TABLE cmis.electric_meter (
     location VARCHAR(255),
     latitude FLOAT8,
     longitude FLOAT8,
+    iso_code VARCHAR(50),
     updated_date DATE DEFAULT CURRENT_DATE
     FOREIGN KEY (contract_id) REFERENCES cmis.contract(contract_id)
 );

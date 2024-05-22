@@ -3,7 +3,7 @@ LANGUAGE plpgsql
 AS $$
 DECLARE
     meter_cursor CURSOR FOR
-        SELECT meter_id, meter_type, voltage, status, location, latitude, longitude, updated_date
+        SELECT meter_id, meter_type, voltage, status, location, latitude, longitude, iso_code, updated_date
         FROM cmis.electric_meter
         WHERE updated_date > (
             SELECT COALESCE(MAX(updated_date), '1900-01-01') FROM dwh.dim_electric_meter
@@ -16,6 +16,7 @@ DECLARE
     c_location VARCHAR(255);
     c_latitude FLOAT8;
     c_longitude FLOAT8;
+    c_iso_code VARCHAR(50);
     c_updated_date DATE;
 
     finished BOOLEAN := FALSE;
@@ -25,7 +26,7 @@ BEGIN
     OPEN meter_cursor;
 
     -- Fetch the first record
-    FETCH meter_cursor INTO c_meter_id, c_meter_type, c_voltage, c_status, c_location, c_latitude, c_longitude, c_updated_date;
+    FETCH meter_cursor INTO c_meter_id, c_meter_type, c_voltage, c_status, c_location, c_latitude, c_longitude, c_iso_code, c_updated_date;
 
     -- Check if the first record is null
     IF c_meter_id IS NULL THEN
@@ -44,16 +45,17 @@ BEGIN
                 location = c_location,
                 latitude = c_latitude,
                 longitude = c_longitude,
+                iso_code = c_iso_code,
                 updated_date = CURRENT_DATE
             WHERE meter_id = c_meter_id;
         ELSE
             -- Insert the new meter into dim_electric_meter
-            INSERT INTO dwh.dim_electric_meter (meter_id, meter_type, voltage, status, location, latitude, longitude, updated_date)
-            VALUES (c_meter_id, c_meter_type, c_voltage, c_status, c_location, c_latitude, c_longitude, CURRENT_DATE);
+            INSERT INTO dwh.dim_electric_meter (meter_id, meter_type, voltage, status, location, latitude, longitude, iso_code, updated_date)
+            VALUES (c_meter_id, c_meter_type, c_voltage, c_status, c_location, c_latitude, c_longitude, c_iso_code, CURRENT_DATE);
         END IF;
 
         -- Fetch the next record
-        FETCH meter_cursor INTO c_meter_id, c_meter_type, c_voltage, c_status, c_location, c_latitude, c_longitude, c_updated_date;
+        FETCH meter_cursor INTO c_meter_id, c_meter_type, c_voltage, c_status, c_location, c_latitude, c_longitude, c_iso_code, c_updated_date;
 
         -- Check if the next record is null
         IF c_meter_id IS NULL THEN

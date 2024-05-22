@@ -25,6 +25,7 @@ CREATE TABLE dwh.dim_electric_meter (
     location VARCHAR(255),
     latitude FLOAT8,
     longitude FLOAT8,
+    iso_code VARCHAR(50),
     updated_date DATE DEFAULT CURRENT_DATE
 );
 
@@ -52,4 +53,4 @@ CREATE TABLE dwh.fact_revenue (
     contract_id INT REFERENCES dwh.dim_contract(contract_id),
     meter_id INT REFERENCES dwh.dim_electric_meter(meter_id),
     revenue FLOAT8
-)
+) 
