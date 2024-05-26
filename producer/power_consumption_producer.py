@@ -71,7 +71,7 @@ def generate_power_consumption_csv(meter_id, customer_type):
 
 # Kafka broker configuration
 bootstrap_servers = 'localhost:29092,localhost:39092'
-topic = 'topic1'
+topic = 'topic2'
 
 # Kafka producer configuration
 conf = {
