@@ -51,3 +51,21 @@ create or replace view dwh.monthly_revenue_by_customer_type as (
     inner join dwh.dim_customer c on f.customer_id = c.customer_id
     group by c.customer_type, d.month, d.year
 );
+
+create or replace view dwh.daily_consumption_by_meter as (
+    select c.customer_id, c.customer_name, m.meter_id, d.day, d.month, d.year, sum(f.consumption) as consumption
+    from dwh.fact_power_consumption f
+    inner join dwh.dim_date d on f.date_id = d.date_id
+    inner join dwh.dim_customer c on f.customer_id = c.customer_id
+    inner join dwh.dim_electric_meter m on f.meter_id = m.meter_id
+    group by c.customer_id, c.customer_name, m.meter_id, d.day, d.month, d.year
+);
+
+create or replace view dwh.daily_consumption_by_time_of_day as (
+    select c.customer_id, c.customer_name, m.meter_id, f.time_of_day, d.day, d.month, d.year, sum(f.consumption) as consumption
+    from dwh.fact_power_consumption f
+    inner join dwh.dim_date d on f.date_id = d.date_id
+    inner join dwh.dim_customer c on f.customer_id = c.customer_id
+    inner join dwh.dim_electric_meter m on f.meter_id = m.meter_id
+    group by c.customer_id, c.customer_name, m.meter_id, d.day, d.month, d.year, f.time_of_day
+);
