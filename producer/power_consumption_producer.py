@@ -71,7 +71,7 @@ def generate_power_consumption_csv(meter_id, customer_type):
 
 # Kafka broker configuration
 bootstrap_servers = 'localhost:29092,localhost:39092'
-topic = 'topic2'
+topic = 'power_consumption_topic'
 
 # Kafka producer configuration
 conf = {
@@ -83,11 +83,14 @@ def main():
     kafka_producer = Producer(conf)
     try:
         while True:
+            # Generate Data for each Meter
             for meter_id in meter_ids.keys():
                 power_consumption_data = generate_power_consumption_csv(meter_id, meter_ids[meter_id])
                 # Produce message to Kafka topic
                 kafka_producer.produce(topic, power_consumption_data.encode('utf-8'))
                 kafka_producer.poll(0)
+            
+            # Sleep for 1 hour
             time.sleep(3600)
     except KeyboardInterrupt:
         pass

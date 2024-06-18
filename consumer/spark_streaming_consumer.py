@@ -4,13 +4,13 @@ from pyspark.sql.types import StructType, StructField, IntegerType, DoubleType, 
 
 # Initialize Spark session
 spark = SparkSession.builder \
-    .appName("KafkaStreamingToTimescaleDB") \
+    .appName("Spark Streaming Consumer") \
     .config("spark.jars", "lib/postgresql-42.7.3.jar") \
     .getOrCreate()
 
 # Define Kafka source properties
 kafka_bootstrap_servers = "localhost:29092,localhost:39092"
-kafka_topic = "topic2"
+kafka_topic = "power_consumption_topic"
 
 # Define Kafka source options
 kafka_options = {
@@ -49,7 +49,7 @@ timescale_db_properties = {
 }
 
 # Function to write data to TimescaleDB
-def write_to_timescaledb(batch_df, batch_id):
+def write_to_timescaledb(batch_df):
     batch_df.write \
         .jdbc(url=timescale_db_url, table="power_consumption_streaming", mode="append", properties=timescale_db_properties)
 

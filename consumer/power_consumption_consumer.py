@@ -4,7 +4,7 @@ import boto3
 
 # Kafka broker configuration
 bootstrap_servers = 'localhost:29092,localhost:39092'
-topic = 'topic1'
+topic = 'power_consumption_topic'
 
 # Kafka consumer configuration
 conf = {
@@ -14,7 +14,7 @@ conf = {
 }
 
 # AWS S3 configuration
-region = 'ap-southeast-1'  # Example: 'us-east-1'
+region = 'ap-southeast-1' 
 bucket_name = 'electricity-consumption-master-data'
 access_key_id = 'AKIATMFNNGPO53WMF6WR'
 secret_access_key = '1UP/8BR0A3zy11lqjT7jcMWR8IhZR+NR+h/NBcPA'

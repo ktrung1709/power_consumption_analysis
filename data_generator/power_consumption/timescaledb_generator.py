@@ -1,6 +1,7 @@
 import csv
 import random
 from datetime import datetime, timedelta
+import psycopg2
 import os
 
 # Load meter IDs from CSV file
@@ -68,19 +69,29 @@ def generate_power_consumption(meter_id, customer_type, datetime_measured):
         'datetime_measured': datetime_measured.strftime('%Y-%m-%d %H:%M:%S')
     }
 
-def save_hourly_data(hourly_data, hour_timestamp):
-    directory = 'C:/data'
-    # directory = 'data/hourly_data'
-    file_name = os.path.join(directory, f"power_consumption_data_{hour_timestamp}.csv")
-    with open(file_name, 'w', newline='') as f:
-        writer = csv.DictWriter(f, fieldnames=['meter_id', 'measure', 'datetime_measured'])
-        writer.writeheader()
-        writer.writerows(hourly_data)
+def save_to_timescaledb(conn, data):
+    with conn.cursor() as cursor:
+        insert_query = """
+            INSERT INTO public.power_consumption_streaming (meter_id, measure, datetime_measured)
+            VALUES (%s, %s, %s)
+        """
+        for row in data:
+            cursor.execute(insert_query, (row['meter_id'], row['measure'], row['datetime_measured']))
+        conn.commit()
 
 def main():
+    # Connect to TimescaleDB
+    conn = psycopg2.connect(
+        dbname='speed_layer_db',
+        user='postgres',
+        password='password',
+        host='localhost',
+        port='5432'
+    )
+
     hourly_data = []
-    start_datetime = datetime(2023, 9, 1, 0, 0)  # Start at 00:00 on January 1, 2023
-    end_datetime = datetime(2024, 3, 31, 23, 0)  # End at 23:00 on January 1, 2023
+    start_datetime = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)  # Start at 00:00 of the current date
+    end_datetime = start_datetime.replace(hour=23)  # End at 23:00 of the current date
 
     current_datetime = start_datetime
     while current_datetime <= end_datetime:
@@ -88,12 +99,13 @@ def main():
             power_consumption_data = generate_power_consumption(meter_id, customer_type, current_datetime)
             hourly_data.append(power_consumption_data)
 
-        hour_timestamp = current_datetime.strftime("%Y%m%d%H%M%S")
-        save_hourly_data(hourly_data, hour_timestamp)
+        save_to_timescaledb(conn, hourly_data)
         hourly_data = []  # Reset hourly data for the next hour
 
         current_datetime += timedelta(hours=1)  # Move to the next hour
-        print('finish data for ' + current_datetime.strftime("%Y%m%d%H%M%S"))
+        print('Finished data for ' + current_datetime.strftime("%Y-%m-%d %H:%M:%S"))
+
+    conn.close()
 
 if __name__ == '__main__':
     main()
