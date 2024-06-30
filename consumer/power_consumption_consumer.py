@@ -1,6 +1,9 @@
 from confluent_kafka import Consumer, KafkaError
 from datetime import datetime, timedelta
 import boto3
+from dotenv import load_dotenv
+import os
+
 
 # Kafka broker configuration
 bootstrap_servers = 'localhost:29092,localhost:39092'
@@ -14,13 +17,12 @@ conf = {
 }
 
 # AWS S3 configuration
-region = 'ap-southeast-1' 
-bucket_name = 'electricity-consumption-master-data'
-access_key_id = 'AKIATMFNNGPO53WMF6WR'
-secret_access_key = '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'
+load_dotenv()
+region = os.getenv('S3_REGION') 
+bucket_name = os.getenv('S3_BUCKET_NAME')
+access_key_id = os.getenv('S3_ACCESS_KEY_ID')
+secret_access_key = os.getenv('S3_SECRET_ACCESS_KEY')
 s3_client = boto3.client('s3', region_name=region, aws_access_key_id=access_key_id, aws_secret_access_key=secret_access_key)
-
-
 
 def send_to_s3(data):
     file_name = f'power_consumption_data_{datetime.now().strftime("%Y%m%d%H%M%S")}.csv'

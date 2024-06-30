@@ -2,11 +2,26 @@ from pyspark.sql import SparkSession
 from pyspark import SparkConf
 from pyspark.sql.types import *
 from pyspark.sql.functions import *
+from dotenv import load_dotenv
+import os
+
+# AWS S3 configuration
+load_dotenv()
+bucket_name = os.getenv('S3_BUCKET_NAME')
+access_key_id = os.getenv('S3_ACCESS_KEY_ID')
+secret_access_key = os.getenv('S3_SECRET_ACCESS_KEY')
+
+# AWS Redshift configuration
+REDSHIFT_HOST = os.getenv('REDSHIFT_HOST')
+REDSHIFT_PORT = os.getenv('REDSHIFT_PORT')
+REDSHIFT_USER = os.getenv('REDSHIFT_USER')
+REDSHIFT_PASSWORD = os.getenv('REDSHIFT_PASSWORD')
+REDSHIFT_DBNAME = os.getenv('REDSHIFT_DBNAME')
 
 # Set Up Spark Config
 conf = SparkConf()
-conf.set('spark.hadoop.fs.s3a.access.key','AKIATMFNNGPO53WMF6WR')
-conf.set('spark.hadoop.fs.s3a.secret.key', '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')
+conf.set('spark.hadoop.fs.s3a.access.key',access_key_id)
+conf.set('spark.hadoop.fs.s3a.secret.key', secret_access_key)
 conf.set('spark.hadoop.fs.s3a.aws.credentials.provider', 'org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider')
 conf.set('spark.hadoop.fs.s3a.impl', 'org.apache.hadoop.fs.s3a.S3AFileSystem')
 conf.set('spark.jars.packages', 'org.apache.hadoop:hadoop-aws:3.2.1')
@@ -17,14 +32,14 @@ spark = SparkSession.builder.appName("Fact Revenue Commercial Transformer").conf
 
 # Redshift Connection Details
 redshift_url = "jdbc:redshift://{host}:{port}/{database}".format(
-    host="redshift-cluster-1.cbkd07elg7lb.ap-southeast-1.redshift.amazonaws.com",
-    port="5439",
-    database="dev"
+    host=REDSHIFT_HOST,
+    port=REDSHIFT_PORT,
+    database=REDSHIFT_DBNAME
 )
 
 redshift_properties = {
-    "user": "awsuser",
-    "password": "Ktrung1709",
+    "user": REDSHIFT_USER,
+    "password": REDSHIFT_PASSWORD,
     "driver": "com.amazon.redshift.jdbc42.Driver"
 }
 

@@ -78,9 +78,9 @@ fact_residential_revenue_df = fact_monthly_residential_consumption_df\
 fact_residential_revenue_df\
     .select('date_id', 'customer_id', 'contract_id', 'meter_id', 'revenue').orderBy('customer_id').show()
 
-fact_residential_revenue_df\
-    .select('date_id', 'customer_id', 'contract_id', 'meter_id', 'revenue')\
-    .write.jdbc(url=redshift_url, table='dwh.fact_revenue' , mode='append', properties=redshift_properties)
+# fact_residential_revenue_df\
+#     .select('date_id', 'customer_id', 'contract_id', 'meter_id', 'revenue')\
+#     .write.jdbc(url=redshift_url, table='dwh.fact_revenue' , mode='append', properties=redshift_properties)
 
 
 spark.stop()

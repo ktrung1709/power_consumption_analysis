@@ -80,8 +80,8 @@ fact_industrial_revenue_df = fact_industrial_revenue_df.groupBy(['customer_id', 
 fact_industrial_revenue_df\
     .select('date_id', 'customer_id', 'contract_id', 'meter_id', 'revenue').show()
 
-fact_industrial_revenue_df\
-    .select('date_id', 'customer_id', 'contract_id', 'meter_id', 'revenue')\
-    .write.jdbc(url=redshift_url, table='dwh.fact_revenue' , mode='append', properties=redshift_properties)
+# fact_industrial_revenue_df\
+#     .select('date_id', 'customer_id', 'contract_id', 'meter_id', 'revenue')\
+#     .write.jdbc(url=redshift_url, table='dwh.fact_revenue' , mode='append', properties=redshift_properties)
 
 spark.stop()

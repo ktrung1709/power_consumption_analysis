@@ -46,12 +46,12 @@ BEGIN
                 latitude = c_latitude,
                 longitude = c_longitude,
                 iso_code = c_iso_code,
-                updated_date = CURRENT_DATE
+                updated_date = c_updated_date
             WHERE meter_id = c_meter_id;
         ELSE
             -- Insert the new meter into dim_electric_meter
             INSERT INTO dwh.dim_electric_meter (meter_id, meter_type, voltage, status, location, latitude, longitude, iso_code, updated_date)
-            VALUES (c_meter_id, c_meter_type, c_voltage, c_status, c_location, c_latitude, c_longitude, c_iso_code, CURRENT_DATE);
+            VALUES (c_meter_id, c_meter_type, c_voltage, c_status, c_location, c_latitude, c_longitude, c_iso_code, c_updated_date);
         END IF;
 
         -- Fetch the next record

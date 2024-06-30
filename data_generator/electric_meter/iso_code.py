@@ -1,4 +1,6 @@
 import psycopg2
+from dotenv import load_dotenv
+import os
 
 # Dictionary with provinces
 vietnam_provinces = {
@@ -68,12 +70,19 @@ vietnam_provinces = {
 }
 
 # Connect to Amazon Redshift database
+load_dotenv()
+REDSHIFT_HOST = os.getenv('REDSHIFT_HOST')
+REDSHIFT_PORT = os.getenv('REDSHIFT_PORT')
+REDSHIFT_USER = os.getenv('REDSHIFT_USER')
+REDSHIFT_PASSWORD = os.getenv('REDSHIFT_PASSWORD')
+REDSHIFT_DBNAME = os.getenv('REDSHIFT_DBNAME')
+
 conn = psycopg2.connect(
-    host="redshift-cluster-1.cbkd07elg7lb.ap-southeast-1.redshift.amazonaws.com",
-    port="5439",
-    user="awsuser",
-    password="Ktrung1709",
-    dbname="dev"
+    host=REDSHIFT_HOST,
+    port=REDSHIFT_PORT,
+    user=REDSHIFT_USER,
+    password=REDSHIFT_PASSWORD,
+    dbname=REDSHIFT_DBNAME
 )
 
 # Create a cursor object

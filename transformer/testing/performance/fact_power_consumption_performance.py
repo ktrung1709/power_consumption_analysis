@@ -76,7 +76,7 @@ fact_consumption_df = daily_consumption_df.join(customer_meter_df, 'meter_id')\
 fact_consumption_df.select('date_id', 'customer_id', 'contract_id', 'meter_id', 'time_of_day', 'consumption').show()
 
 # Write the data back to Redshift
-fact_consumption_df.write.jdbc(url=redshift_url, table='dwh.fact_power_consumption' , mode='append', properties=redshift_properties)
+# fact_consumption_df.write.jdbc(url=redshift_url, table='dwh.fact_power_consumption' , mode='append', properties=redshift_properties)
 
 # Stop SparkSession
 spark.stop()

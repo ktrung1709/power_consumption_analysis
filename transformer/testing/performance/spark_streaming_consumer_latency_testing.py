@@ -1,8 +1,6 @@
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col, split
 from pyspark.sql.types import StructType, StructField, IntegerType, DoubleType, TimestampType
-from dotenv import load_dotenv
-import os
 
 # Initialize Spark session
 spark = SparkSession.builder \
@@ -12,13 +10,13 @@ spark = SparkSession.builder \
 
 # Define Kafka source properties
 kafka_bootstrap_servers = "localhost:29092,localhost:39092"
-kafka_topic = "power_consumption_topic"
+kafka_topic = "latency_testing"
 
 # Define Kafka source options
 kafka_options = {
     "kafka.bootstrap.servers": kafka_bootstrap_servers,
     "subscribe": kafka_topic,
-    "startingOffsets": "earliest"
+    "startingOffsets": "earliest"  # Optional: Start from the earliest available offset
 }
 
 # Read from Kafka source using structured streaming API
@@ -43,23 +41,17 @@ parsed_df = streaming_df.selectExpr("CAST(value AS STRING) as csv_value") \
     )
 
 # Define TimescaleDB connection properties
-
-load_dotenv()
-username = os.getenv('TIMESCALEDB_USERNAME') 
-password = os.getenv('TIMESCALEDB_PASSWORD')
-dbname = os.getenv('TIMESCALEDB_DBNAME')
-
-timescale_db_url = f"jdbc:postgresql://localhost:5432/{dbname}"
+timescale_db_url = "jdbc:postgresql://localhost:5432/speed_layer_db"
 timescale_db_properties = {
-    "user": username,
-    "password": password,
+    "user": "postgres",
+    "password": "password",
     "driver": "org.postgresql.Driver"
 }
 
 # Function to write data to TimescaleDB
 def write_to_timescaledb(batch_df, batch_id):
     batch_df.write \
-        .jdbc(url=timescale_db_url, table="public.power_consumption_streaming", mode="append", properties=timescale_db_properties)
+        .jdbc(url=timescale_db_url, table="public.latency_testing", mode="append", properties=timescale_db_properties)
 
 # Write the parsed data to TimescaleDB
 query = parsed_df.writeStream \
@@ -72,4 +64,3 @@ query.awaitTermination()
 
 # Stop Spark session
 spark.stop()
-

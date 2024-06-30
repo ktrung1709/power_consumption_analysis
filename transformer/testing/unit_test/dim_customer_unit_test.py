@@ -1,13 +1,16 @@
 import psycopg2
 import unittest
 from datetime import date
+from dotenv import load_dotenv
+import os
 
-# Replace these with your actual Redshift cluster details
-REDSHIFT_HOST = 'redshift-cluster-1.cbkd07elg7lb.ap-southeast-1.redshift.amazonaws.com'
-REDSHIFT_PORT = '5439'
-REDSHIFT_DBNAME = 'dev'
-REDSHIFT_USER = 'awsuser'
-REDSHIFT_PASSWORD = 'Ktrung1709'
+# Connect to Amazon Redshift database
+load_dotenv()
+REDSHIFT_HOST = os.getenv('REDSHIFT_HOST')
+REDSHIFT_PORT = os.getenv('REDSHIFT_PORT')
+REDSHIFT_USER = os.getenv('REDSHIFT_USER')
+REDSHIFT_PASSWORD = os.getenv('REDSHIFT_PASSWORD')
+REDSHIFT_DBNAME = os.getenv('REDSHIFT_DBNAME')
 
 class TestUpdateDimCustomer(unittest.TestCase):
     

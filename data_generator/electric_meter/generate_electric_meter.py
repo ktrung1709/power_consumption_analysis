@@ -1,5 +1,7 @@
 import random
 import psycopg2
+from dotenv import load_dotenv
+import os
 
 province_coordinates = {
     "Hà Nội" : (21.0278, 105.8342), 
@@ -71,14 +73,20 @@ province_coordinates = {
 provinces = list(province_coordinates.keys())
 
 # Connect to Amazon Redshift database
-db = psycopg2.connect(
-    host="redshift-cluster-1.cbkd07elg7lb.ap-southeast-1.redshift.amazonaws.com",
-    port="5439",
-    user="awsuser",
-    password="Ktrung1709",
-    dbname="dev"
-)
+load_dotenv()
+REDSHIFT_HOST = os.getenv('REDSHIFT_HOST')
+REDSHIFT_PORT = os.getenv('REDSHIFT_PORT')
+REDSHIFT_USER = os.getenv('REDSHIFT_USER')
+REDSHIFT_PASSWORD = os.getenv('REDSHIFT_PASSWORD')
+REDSHIFT_DBNAME = os.getenv('REDSHIFT_DBNAME')
 
+db = psycopg2.connect(
+    host=REDSHIFT_HOST,
+    port=REDSHIFT_PORT,
+    user=REDSHIFT_USER,
+    password=REDSHIFT_PASSWORD,
+    dbname=REDSHIFT_DBNAME
+)
 # Create cursor
 cursor = db.cursor()
 
